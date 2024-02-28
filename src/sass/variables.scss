@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Manrope-light';
+    src: url('../../public/Manrope/Manrope-Light.ttf');
+}
+@font-face {
+    font-family: 'Manrope-reg' ;
+    src: url('../../public/Manrope/Manrope-Regular.ttf');
+}
+@font-face {
+    font-family: 'Manrope-bold';
+    src: url('../../public/Manrope/Manrope-Bold.ttf');
+}
+
+//font variables
+
+$lightFont: 'Manrope-light';
+$regFont: 'Manrope-reg';
+$boldFont: 'Manrope-bold';
+
+
+$headOneFontSize: 3.5rem;
+$headTwoFontSize: 2.5rem;
+$headThreeFontSize: 2rem;
+$headFourFontSize: 1.75rem;
+$headFiveFontSize: 1.5rem;
+$headSixFontSize: 1.125rem;
+$paraFontSize: 0.9375rem;
+
+
+$headOneLetterSpace: 2px;
+$headTwoLetterSpace: 1.5px;
+$headThreeLetterSpace: 1.15px;
+$headFourLetterSpace: 2px;
+$headFiveLetterSpace: 1.7px;
+$headSixLetterSpace: 1.3px;
+
+$headOneLineHeight: 3.625rem;
+$headTwoLineHeight: 2.75rem;
+$headThreeLineHeight: 2.25rem;
+$headFourLineHeight: 2.375;
+$headFiveLineHeight: 2.0625;
+$headSixLineHeight: 1.5rem;
+$paraLineHeight: 1.5625rem;
+
+
+//colors
+
+$primaryColor: #D87D4A;
+$secondaryColor: #101010;
+$thirdColor: #979797;
+$fourthColor: #FAFAFA;
+
+
+
+
+
+

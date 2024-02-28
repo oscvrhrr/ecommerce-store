@@ -1,7 +1,8 @@
 import '../sass/navbar.scss'
 // import Logo from '../starter-code/assets/shared/desktop/logo.svg'
 // import CartIcon from '../starter-code/assets/shared/desktop/icon-cart.svg'
-
+import Logo from '../../public/audio-store-assets/shared/desktop/logo.svg'
+import Cart from '../../public/audio-store-assets/shared/desktop/icon-cart.svg'
 
 function NavBar() {
 
@@ -9,18 +10,15 @@ function NavBar() {
         <>
             <nav>
                 <div className="nav-container">
-                    <div className="nav-logo">
-                    
-                    </div>
+                    <img src={Logo} alt="an image of the company logo" />
                     <ul className='nav-menu'>
                         <li>Home</li>
                         <li>Headphones</li>
                         <li>Speakers</li>
                         <li>Earphones</li>
                     </ul>
-                    <div>
-
-                    </div>
+                    <img src={Cart} alt="an icon of a shopping cart" />
+                    
 
                 </div>
 

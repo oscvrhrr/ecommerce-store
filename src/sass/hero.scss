@@ -1,12 +1,32 @@
+@import 'variables';
 
 div {
     .content-container {
         position: absolute;
-        background-color: white;
-        top: 50%;
+        background-color: transparent;
+        color: white;
+        top: 40%;
         width: 30rem;
         z-index: 2;
+        margin: 0 0 0 5rem;
+        font-family: $regFont;
+        margin: 0 0 0 10.31rem;
+        h1 {
+            font-size: $headOneFontSize;
+            font-family: $boldFont;
+            line-height: $headOneLineHeight;
+            text-transform: uppercase;
+            
+        }
+        p {
+            font-size: $paraFontSize;
+            color: $thirdColor;
+            width: 21.82rem;
+            line-height: $paraLineHeight;
+        }
+
     }
+
     .hero-img--size {
         img {
             width: 100%;

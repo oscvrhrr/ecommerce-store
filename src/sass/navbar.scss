@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'Manrope-bold';
+  src: url('../../public/Manrope/Manrope-Bold.ttf');
+}
 
 nav {
-  background-color: #0E0E0E;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: transparent;
   color: white;
   display: flex;
   justify-content: center;
@@ -10,15 +18,22 @@ nav {
     align-items: center;
     width: 69rem;
     height: 6rem;
+    border-bottom: solid 1px hsla(0, 0%, 59%, .20);
   }
   .nav-menu {
     width: 29rem;
-
+    margin-right: 5rem;
   }
   li {
     text-decoration: none;
     display: inline-block;
     margin: 1rem;
+    font-size: .81rem;
+    font-family: 'Manrope-bold';
+    text-transform: uppercase;
+    line-height: 25px;
+    letter-spacing: 2px;
+    
   }
   
 }
