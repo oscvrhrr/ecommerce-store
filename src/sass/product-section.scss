@@ -1,8 +1,9 @@
 @import 'variables';
 section {
     display: flex;
-    margin: 7rem 0;
     justify-content: space-around;
+    margin: 7rem 10rem;
+
 }
 
 
@@ -12,14 +13,15 @@ section {
     flex-direction: row;
 
     .product {
+        width: 21.875rem;
+        height: 12.75rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: $thirdColor;
-        width: 21.875rem;
-        height: 12.75rem;
         border-radius: 8px;
+        padding-bottom: 6rem;
+        background-color: $thirdColor;
         img {
             width: 10rem ;
             height: 10rem;
@@ -30,6 +32,15 @@ section {
             font-size: $headSixFontSize;
             letter-spacing: $headSixLetterSpace;
             line-height: $headSixLineHeight;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: hsla(0, 0, 0, .5);
+            img {
+                width: .3125rem;
+                height: 0.625rem;
+                margin-left: .8125rem;
+            }
         }
     }
 }
