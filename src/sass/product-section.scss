@@ -1,0 +1,35 @@
+@import 'variables';
+section {
+    display: flex;
+    margin: 7rem 0;
+    justify-content: space-around;
+}
+
+
+.container-product {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $thirdColor;
+        width: 21.875rem;
+        height: 12.75rem;
+        border-radius: 8px;
+        img {
+            width: 10rem ;
+            height: 10rem;
+        }
+        h6 {
+            text-transform: uppercase;
+            font-family: 'Manrope-bold';
+            font-size: $headSixFontSize;
+            letter-spacing: $headSixLetterSpace;
+            line-height: $headSixLineHeight;
+        }
+    }
+}
