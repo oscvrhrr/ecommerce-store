@@ -3,7 +3,7 @@
 
 
 function Product({name,img}) {
-    const arrow = '../../public/audio-store-assets/shared/desktop/icon-arrow-right.svg'
+    const arrow = '../../audio-store-assets/shared/desktop/icon-arrow-right.svg'
     return (
         <div className="container-product">
             <div className="product">

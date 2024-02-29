@@ -4,9 +4,9 @@ import '../sass/product-section.scss'
 
 function ProductSection() {
    const images = {
-    headphones: '../../public/audio-store-assets/shared/desktop/image-category-thumbnail-headphones.png',
-    speakers: '../../public/audio-store-assets/shared/desktop/image-category-thumbnail-speakers.png',
-    earphones: '../../public/audio-store-assets/shared/desktop/image-category-thumbnail-earphones.png',
+    headphones: '../../audio-store-assets/shared/desktop/image-category-thumbnail-headphones.png',
+    speakers: '../../audio-store-assets/shared/desktop/image-category-thumbnail-speakers.png',
+    earphones: '../../audio-store-assets/shared/desktop/image-category-thumbnail-earphones.png',
    }
    
 
