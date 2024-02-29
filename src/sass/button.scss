@@ -1,0 +1,12 @@
+@import 'variables';
+
+button{
+    width: 10rem;
+    height: 3rem;
+    border: none;
+}
+
+.primary-button{
+    background-color: $primaryColor;
+    color: white;
+}

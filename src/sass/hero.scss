@@ -5,7 +5,7 @@ div {
         position: absolute;
         background-color: transparent;
         color: white;
-        top: 40%;
+        top: 29%;
         width: 30rem;
         z-index: 2;
         margin: 0 0 0 5rem;
@@ -16,13 +16,14 @@ div {
             font-family: $boldFont;
             line-height: $headOneLineHeight;
             text-transform: uppercase;
-            
+            margin: 1.5rem 0;
         }
         p {
             font-size: $paraFontSize;
             color: $thirdColor;
             width: 21.82rem;
             line-height: $paraLineHeight;
+            margin-bottom: 2.5rem;
         }
 
     }
