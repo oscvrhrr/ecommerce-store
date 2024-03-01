@@ -1,12 +1,17 @@
 @import 'variables';
 
-button{
+button {
     width: 10rem;
     height: 3rem;
     border: none;
 }
 
-.primary-button{
+.primary-button {
     background-color: $primaryColor;
+    color: white;
+}
+
+.secondary-button {
+    background-color: $secondaryColor;
     color: white;
 }
