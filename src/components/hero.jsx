@@ -2,7 +2,7 @@ import '../sass/hero.scss'
 import '../sass/button.scss'
 import HeroImg from '../../public/audio-store-assets/home/desktop/image-hero.jpg'
 import NavBar from './NavBar';
-import Button from './Button';
+import Button from './button';
 
 function Hero() {
 
