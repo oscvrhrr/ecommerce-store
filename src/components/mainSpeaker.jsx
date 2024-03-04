@@ -1,5 +1,5 @@
 import '../sass/product-section.scss'
-import Button from "./button";
+import Button from "./Button";
 
 function MainSpeaker() {
 

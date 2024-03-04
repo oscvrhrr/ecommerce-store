@@ -74,3 +74,23 @@ section {
     }
     
 }
+
+.secondary-speaker-component {
+    background-image: url('../../public/audio-store-assets/home/desktop/image-speaker-zx7.jpg');
+    margin: 0 11.5rem;
+    height: 20rem;
+    border-radius: 8px;
+    .secondary-speaker-component-container {
+        width: 12.75em;
+        margin: 0 6rem;
+        padding: 7rem 0;
+        h4 {
+            font-size: $headFourFontSize;
+        }
+        
+    }
+
+   
+    
+
+}
