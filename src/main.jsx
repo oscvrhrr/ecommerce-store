@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './sass/index.scss'
-import Hero from './components/Hero'
+import Hero from './components/hero'
 import ProductSection from './components/productSection'
 import MainSpeaker from './components/mainSpeaker'
 import SecondarySpeaker from './components/SecondarySpeaker'
