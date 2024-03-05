@@ -5,9 +5,9 @@ import Logo from '../../public/audio-store-assets/shared/desktop/logo.svg'
 
 function Footer() {
     const socials = {
-        facebook: 'public/audio-store-assets/shared/desktop/icon-facebook.svg',
-        twitter: 'public/audio-store-assets/shared/desktop/icon-twitter.svg',
-        instagram: 'public/audio-store-assets/shared/desktop/icon-instagram.svg'
+        facebook: '../../audio-store-assets/shared/desktop/icon-facebook.svg',
+        twitter: '../../audio-store-assets/shared/desktop/icon-twitter.svg',
+        instagram: '../../audio-store-assets/shared/desktop/icon-instagram.svg'
     }
     return (
         <footer>
