@@ -1,0 +1,37 @@
+@import 'variables';
+
+
+footer {
+    background-color: $secondaryColor;
+    color: white;
+    display: flex;
+    height: 22.81rem;
+    padding: 4.68rem 11.5rem;
+    font-family: 'Manrope-reg';
+    .footer-content {
+        width: 33.75rem;
+    }
+    p {
+        color: hsla(0, 100%, 100%, 0.5);
+        margin: 3.25rem 0 0 0;
+        line-height: $paraLineHeight;
+    }
+
+    ul {
+        list-style: none;
+        display: inline-block;
+        margin-left: 5rem ;
+        li {
+            display: inline;
+            margin: 0 0rem 0 2.5rem;
+            text-transform: uppercase;
+        }
+    }
+    .block-socials {
+        padding: 5rem 0 0 22rem;
+        img {
+            margin: 0 .5rem;
+        }
+
+    }
+}
