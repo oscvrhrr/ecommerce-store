@@ -6,6 +6,7 @@ import ProductSection from './components/productSection'
 import MainSpeaker from './components/mainSpeaker'
 import SecondarySpeaker from './components/SecondarySpeaker'
 import Earphone from './components/EarPhone'
+import ProductBanner from './components/productBanner'
 
 
 
@@ -16,5 +17,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <MainSpeaker/>
     <SecondarySpeaker/>
     <Earphone/>
+    <ProductBanner/>
   </React.StrictMode>
 )

@@ -4,7 +4,7 @@
 section {
     display: flex;
     justify-content: space-around;
-    margin: 7rem 10rem;
+    margin: 10.5rem 10rem 3rem;
 
 }
 
@@ -119,6 +119,32 @@ section {
             font-size: $headFourFontSize;
             padding-bottom: 1.5rem;
         }
+    }
+}
+
+.block-product-banner {
+    margin: 7.625rem 11.5rem;
+    display: flex;
+    .block-product-banner--content {
+        font-family: 'Manrope-bold';
+        padding: 7rem 7rem 0 0;
+        h2 {
+            font-size: $headTwoFontSize;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            span {
+                color: $primaryColor;
+            }
+        }
+        p {
+            font-family: 'Manrope-reg';
+            color: hsla(0, 0%, 0%, 0.5);
+            line-height: $paraLineHeight;
+        }
+
+    }
+    img {
+        border-radius: 8px;
     }
 }
 
