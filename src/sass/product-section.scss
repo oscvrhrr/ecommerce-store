@@ -1,5 +1,6 @@
 @import 'variables';
 
+
 section {
     display: flex;
     justify-content: space-around;
@@ -90,7 +91,36 @@ section {
         
     }
 
-   
-    
-
 }
+
+
+
+
+.block-earphone {
+    display: flex;
+    margin: 3rem 11.5rem;
+    background-color: white;
+    border-radius: 8px;
+    .earphone-img {
+        background-image: url('../../public/audio-store-assets/product-yx1-earphones/desktop/image-gallery-2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 20rem;
+        border-radius: 8px;
+    }
+    .block-content {
+        background-color: $thirdColor;
+        width: 33.75rem;
+        margin-left: 1.85rem;
+        border-radius: 8px;
+        padding: 6rem 5rem;
+        h4 {
+            font-size: $headFourFontSize;
+            padding-bottom: 1.5rem;
+        }
+    }
+}
+
+
+

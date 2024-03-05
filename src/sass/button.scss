@@ -3,21 +3,24 @@
 button {
     width: 10rem;
     height: 3rem;
-    border: none;
+    text-transform: uppercase;
 }
 
 .primary-button {
     background-color: $primaryColor;
     color: white;
+    border: none;
 }
 
 .secondary-button {
     background-color: $secondaryColor;
     color: white;
+    border: none;
 }
 
 .transparent-button {
     background-color: transparent;
-    border: 1px solid black;
     color: #000;
+    border: 1px solid black;
+
 }
