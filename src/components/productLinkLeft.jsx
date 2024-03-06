@@ -7,7 +7,7 @@ import Button from './button';
 function ProductLinkLeft({title, desc, img}) {
     return (
         <>
-            <article>
+            <article className='component-product-left-link'>
                 <img src={img} alt="" />
                 <div>
                     <h2>{title}</h2>
