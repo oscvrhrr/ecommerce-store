@@ -7,7 +7,7 @@ import ProductSection from "../components/productSection";
 export default function SpeakersPage() {
     return (
         <>
-            <Header/>
+            <Header pageTitle="Speakers" />
             <ProductSection/>
             <ProductBanner/>
             <Footer/>

@@ -7,7 +7,7 @@ import Footer from "../components/footer";
 export default function EarphonesPage() {
     return (
         <>
-            <Header/>
+            <Header pageTitle="EarPhones" />
             <ProductSection/>
             <ProductBanner/>
             <Footer/>

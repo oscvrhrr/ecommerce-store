@@ -12,10 +12,10 @@ function NavBar() {
                 <div className="nav-container">
                     <img src={Logo} alt="an image of the company logo" />
                     <ul className='nav-menu'>
-                        <Link to='/'>Home</Link>
-                        <Link to='/headphones'>Headphones</Link>
-                        <Link to='/speakers'>Speakers</Link>
-                        <Link to='/earphones'>Earphones</Link>
+                        <Link className='link' to='/'>Home</Link>
+                        <Link className='link' to='/headphones'>Headphones</Link>
+                        <Link className='link' to='/speakers'>Speakers</Link>
+                        <Link className='link' to='/earphones'>Earphones</Link>
                     </ul>
                     <img src={Cart} alt="an icon of a shopping cart" />
                     

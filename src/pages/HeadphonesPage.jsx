@@ -6,7 +6,7 @@ import ProductSection from "../components/productSection"
 export default function HeadphonesPage() {
     return (
         <>
-            <Header/>
+            <Header pageTitle="Headphones" />
             <ProductSection/>
             <ProductBanner/>
             <Footer/>
