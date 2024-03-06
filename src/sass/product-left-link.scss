@@ -20,3 +20,25 @@
         }
     }
 }
+
+.component-product-right-link {
+    margin: 10rem 11.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: $regFont;
+    img {
+        width: 30rem;
+        border-radius: 8px;
+    }
+    div {
+        padding: 6.8rem 7.81rem;
+        h2 {
+            text-transform: uppercase;
+            
+            font-size: $headTwoFontSize;
+        }
+        p {
+            width: 27rem;
+        }
+    }
+}
