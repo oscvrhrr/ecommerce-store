@@ -10,8 +10,8 @@ export default function HomePage() {
     return (
         <>
             <Hero/>
-            <MainSpeaker/>
             <ProductSection/>
+            <MainSpeaker/>
             <SecondarySpeaker/>
             <Earphone/>
             <ProductBanner/>
