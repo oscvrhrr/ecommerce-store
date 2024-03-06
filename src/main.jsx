@@ -1,24 +1,37 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './sass/index.scss'
-import Hero from './components/hero'
-import ProductSection from './components/productSection'
-import MainSpeaker from './components/mainSpeaker'
-import SecondarySpeaker from './components/SecondarySpeaker'
-import Earphone from './components/EarPhone'
-import ProductBanner from './components/productBanner'
-import Footer from './components/footer'
 
+
+import HomePage from './pages/HomePage'
+import HeadphonesPage from './pages/HeadphonesPage'
+import SpeakersPage from './pages/SpeakersPage'
+import EarphonesPage from './pages/EarphonesPage'
+
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <HomePage />,
+  },
+  {
+    path: '/headphones',
+    element: <HeadphonesPage/>
+  },
+  {
+    path: '/speakers',
+    element: <SpeakersPage/>
+  },
+  {
+    path: '/earphones',
+    element:  <EarphonesPage/>
+  }
+])
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Hero/>
-    <ProductSection/>
-    <MainSpeaker/>
-    <SecondarySpeaker/>
-    <Earphone/>
-    <ProductBanner/>
-    <Footer/>
+    <RouterProvider router={router}/>
   </React.StrictMode>
 )

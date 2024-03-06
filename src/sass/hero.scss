@@ -34,3 +34,15 @@ div {
         }
     }
 }
+
+.header {
+    background-color: $secondaryColor;
+    color: white;
+    height: 21rem;
+    h2 {
+        text-align: center;
+        padding-top: 13rem;
+        text-transform: uppercase;
+        font-family: 'Manrope-reg';
+    }
+}
