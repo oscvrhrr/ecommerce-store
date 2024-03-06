@@ -8,7 +8,7 @@ function Header ({pageTitle}) {
     return (
         <>
             <div className="header">
-                <NavBar/>
+                <NavBar className="nav-container" />
                 <h2>{pageTitle}</h2>
             </div>
         </>

@@ -1,15 +1,17 @@
+/* eslint-disable react/prop-types */
 import '../sass/navbar.scss'
 // import Logo from '../starter-code/assets/shared/desktop/logo.svg'
 // import CartIcon from '../starter-code/assets/shared/desktop/icon-cart.svg'
 import Logo from '../../public/audio-store-assets/shared/desktop/logo.svg'
 import Cart from '../../public/audio-store-assets/shared/desktop/icon-cart.svg'
 import { Link } from 'react-router-dom'
-function NavBar() {
+
+function NavBar({className, background}) {
 
     return (
         <>
-            <nav>
-                <div className="nav-container">
+            <nav className={className}>
+                <div className="navcontent" style={{backgroundColor:background}} >
                     <img src={Logo} alt="an image of the company logo" />
                     <ul className='nav-menu'>
                         <Link className='link' to='/'>Home</Link>

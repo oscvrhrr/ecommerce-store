@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage'
 import HeadphonesPage from './pages/HeadphonesPage'
 import SpeakersPage from './pages/SpeakersPage'
 import EarphonesPage from './pages/EarphonesPage'
+import ProductDetailsPage from './pages/ProductDetailsPage'
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: '/earphones',
     element:  <EarphonesPage/>
+  },
+  {
+    path: '/product-details',
+    element: <ProductDetailsPage/>
   }
 ])
 

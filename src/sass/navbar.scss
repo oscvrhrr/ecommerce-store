@@ -2,24 +2,28 @@
   font-family: 'Manrope-bold';
   src: url('../../public/Manrope/Manrope-Bold.ttf');
 }
+@import 'variables.scss';
 
-nav {
+.nav-container {
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
-  background-color: transparent;
   color: white;
   display: flex;
   justify-content: center;
-  .nav-container {
+  .navcontent {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 69rem;
+    width: 100%;
     height: 6rem;
+    padding: 0 10rem;
     border-bottom: solid 1px hsla(0, 0%, 59%, .20);
+
   }
+  
   .nav-menu {
     width: 29rem;
     margin-right: 5rem;
@@ -36,4 +40,45 @@ nav {
     
   }
   
+}
+
+
+.product-details-navbar {
+  margin: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  .navcontent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 69rem;
+    width: 100%;
+    height: 6rem;
+    padding: 0 10rem;
+    border-bottom: solid 1px hsla(0, 0%, 59%, .20);
+
+  }
+  
+  .nav-menu {
+    width: 29rem;
+    margin-right: 5rem;
+  }
+  .link {
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem;
+    font-size: .81rem;
+    font-family: 'Manrope-bold';
+    text-transform: uppercase;
+    line-height: 25px;
+    letter-spacing: 2px;
+    
+  }
+
+
+}
+
+.nav-background-color {
+  background-color: #000000;
 }

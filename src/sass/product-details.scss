@@ -1,0 +1,45 @@
+@import 'variables.scss';
+
+
+.component-product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 11.5rem;
+    font-family: $regFont;
+
+    img {
+        height: 35rem;
+        border-radius: 8px;
+    }
+    .component-product-details-container {
+        padding: 4.81rem 7.75rem;
+        h2 {
+            font-size: $headTwoFontSize;
+            font-family: $boldFont;
+            text-transform: uppercase;
+            letter-spacing: $headTwoLetterSpace;
+        }
+        p {
+            margin: 2rem 0;
+            
+        }
+        .component-product-details--actions {
+            display: flex;
+            div {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-right: 1rem ;
+            }
+        }
+    }
+    
+}
+
+.component-quantity-field {
+    width: 7.5rem;
+    height: 3rem;
+    background-color: $thirdColor;
+    
+}
