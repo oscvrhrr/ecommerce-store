@@ -1,6 +1,7 @@
 import Button from "./button"
 import '../sass/product-section.scss'
 import '../sass/button.scss'
+import { Link } from "react-router-dom"
 
 function SecondarySpeaker() {
     return (
@@ -8,9 +9,11 @@ function SecondarySpeaker() {
             <div className="secondary-speaker-component">
                 <div className="secondary-speaker-component-container">
                     <h4>ZX7 Speaker</h4>
-                    <Button 
-                    buttonType='transparent-button'
-                    label='See Product'/>
+                    <Link to="/product-zx7-speaker" >
+                        <Button 
+                        buttonType='transparent-button'
+                        label='See Product'/>
+                    </Link>
 
                 </div>
                 

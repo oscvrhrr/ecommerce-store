@@ -15,8 +15,8 @@ function ProductSection() {
         <>
             <section>
                 <Product img={images.headphones} name="Headphones" path="/headphones"/>
-                <Product img={images.speakers} name="Speakers"/>
-                <Product img={images.earphones} name="Earphones"/>
+                <Product img={images.speakers} name="Speakers" path="/speakers" />
+                <Product img={images.earphones} name="Earphones" path="/earphones" />
             </section>
         </>
     )

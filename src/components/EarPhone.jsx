@@ -1,4 +1,5 @@
 import Button from "./button"
+import { Link } from "react-router-dom"
 import '../sass/product-section.scss'
 import '../sass/button.scss'
 
@@ -12,8 +13,10 @@ return (
             </div>
             <div className="block-content">
                 <h4>YX1 Earphones</h4>
-                <Button label='See Product' buttonType='transparent-button'
-                />
+                <Link to="/product-earphones" >
+                    <Button label='See Product' buttonType='transparent-button'
+                    />
+                </Link>
             </div>
         </article>
     </>
