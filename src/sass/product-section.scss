@@ -36,15 +36,22 @@ section {
             line-height: $headSixLineHeight;
             margin-bottom: 1rem;
         }
-        p {
-            color: hsla(0, 0%, 0%, 0.5);
-            img {
-                width: .3125rem;
-                height: 0.625rem;
-                margin-left: .8125rem;
+        a {
+            text-decoration: none;
+            p {
+                color: hsla(0, 0%, 0%, 0.5);
+                img {
+                    width: .3125rem;
+                    height: 0.625rem;
+                    margin-left: .8125rem;
+                }
+            }
+            p:hover {
+                color: $primaryColor;
             }
         }
     }
+   
 }
 
 

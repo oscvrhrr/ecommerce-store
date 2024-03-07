@@ -20,10 +20,17 @@ button {
     color: white;
     border: none;
 }
+.secondary-button:hover {
+    background-color: $secondaryHover;
+}
 
 .transparent-button {
     background-color: transparent;
     color: #000;
     border: 1px solid black;
 
+}
+.transparent-button:hover {
+    background-color: $thirdHover;
+    color: white;
 }
