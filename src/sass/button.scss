@@ -11,6 +11,9 @@ button {
     color: white;
     border: none;
 }
+.primary-button:hover {
+    background-color: $primaryHover;
+}
 
 .secondary-button {
     background-color: $secondaryColor;

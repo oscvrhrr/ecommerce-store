@@ -22,7 +22,7 @@ function App() {
             <Route path="/product-details-xx59" element={<WhiteHeadphones/>}></Route>
             <Route path="/product-zx9-speaker" element={<ZX9Speaker/>}></Route>
             <Route path="/product-zx7-speaker" element={<ZX7Speaker/>}></Route>
-            <Route path="/product-earphone" element={<EarphoneDetails/>}></Route>
+            <Route path="/product-earphones" element={<EarphoneDetails/>}></Route>
         </Routes>
     )
 }
