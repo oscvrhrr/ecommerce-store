@@ -22,7 +22,7 @@
         }
         p {
             margin: 2rem 0;
-            
+
         }
         .component-product-details--actions {
             display: flex;
@@ -42,4 +42,44 @@
     height: 3rem;
     background-color: $thirdColor;
     
+}
+
+.component-features {
+    display: flex;
+    margin: 5rem 11.5rem;
+    font-family: $regFont;
+    .component-features--content {
+        width: 50%;
+        h3 {
+            font-size: $headThreeFontSize;
+        }
+        p {
+            margin-top: 2rem;
+        }
+    }
+    .component-box--content {
+        width: 50%;
+        padding: 0 10rem;
+        h3 {
+            font-size: $headThreeFontSize;
+        }
+        ul {
+            margin-top: 2rem;
+            li {
+                list-style: none;
+            }
+        }
+    }
+}
+
+.component-image-grid {
+    display: flex;
+    width: 69.375rem;
+    margin: 5rem 11.5rem;
+    img {
+        border-radius: 8px;
+    }
+    .margin--top {
+        margin-top: 1.6rem;
+    }
 }
