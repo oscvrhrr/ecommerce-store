@@ -15,7 +15,7 @@ function Hero() {
           <h3>New Product</h3>
           <h1>XX99 Mark II HEADPHONES</h1>
           <p>Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
-          <Link to='/product-details'>
+          <Link to='/product-details-mark-two'>
             <Button
               buttonType='primary-button'
               label={"See Product"}

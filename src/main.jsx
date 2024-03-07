@@ -9,6 +9,8 @@ import HeadphonesPage from './pages/HeadphonesPage'
 import SpeakersPage from './pages/SpeakersPage'
 import EarphonesPage from './pages/EarphonesPage'
 import ProductDetailsPage from './pages/ProductDetailsPage'
+import MarkOnePage from './pages/MarkIPage'
+import WhiteHeadphones from './pages/WhiteHeadphonesPage'
 
 
 const router = createBrowserRouter([
@@ -29,8 +31,16 @@ const router = createBrowserRouter([
     element:  <EarphonesPage/>
   },
   {
-    path: '/product-details',
+    path: '/product-details-mark-two',
     element: <ProductDetailsPage/>
+  },
+  {
+    path: '/product-details-mark-one',
+    element: <MarkOnePage/>
+  },
+  {
+    path: '/product-details-xx59',
+    element: <WhiteHeadphones/>
   }
 ])
 

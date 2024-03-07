@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import '../sass/product-left-link.scss';
 import Button from './button';
+import { Link } from 'react-router-dom';
 
 
-
-function ProductLinkLeft({title, desc, img}) {
+function ProductLinkLeft({title, desc, img, path}) {
     return (
         <>
             <article className='component-product-left-link'>
@@ -12,7 +12,9 @@ function ProductLinkLeft({title, desc, img}) {
                 <div>
                     <h2>{title}</h2>
                     <p>{desc}</p>
-                    <Button buttonType="primary-button" label="See Product" />
+                    <Link to={path}>
+                        <Button buttonType="primary-button" label="See Product" />
+                    </Link>
                 </div>
             </article>
         </>
