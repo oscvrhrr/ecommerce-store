@@ -41,7 +41,9 @@
     width: 7.5rem;
     height: 3rem;
     background-color: $thirdColor;
-    
+    button {
+        border: none;
+    }
 }
 
 .component-features {
