@@ -3,10 +3,14 @@ import '../sass/navbar.scss'
 // import Logo from '../starter-code/assets/shared/desktop/logo.svg'
 // import CartIcon from '../starter-code/assets/shared/desktop/icon-cart.svg'
 import Logo from '../../public/audio-store-assets/shared/desktop/logo.svg'
-import Cart from '../../public/audio-store-assets/shared/desktop/icon-cart.svg'
+import CartImage from '../../public/audio-store-assets/shared/desktop/icon-cart.svg'
+import Cart from './cart'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 function NavBar({className, background}) {
+    const [showCart, setShowCart] = useState(false)
+  
 
     return (
         <>
@@ -19,9 +23,9 @@ function NavBar({className, background}) {
                         <Link className='link' to='/speakers'>Speakers</Link>
                         <Link className='link' to='/earphones'>Earphones</Link>
                     </ul>
-                    <img src={Cart} alt="an icon of a shopping cart" />
-                    
-
+                    <img src={CartImage} alt="an icon of a shopping cart" onClick={() => setShowCart(!showCart)}/>
+                    {showCart ? <Cart/> : null}
+                    {showCart}
                 </div>
 
             </nav>

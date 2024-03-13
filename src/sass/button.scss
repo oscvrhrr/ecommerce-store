@@ -6,6 +6,13 @@ button {
     text-transform: uppercase;
 }
 
+.checkout-button {
+    background-color: $primaryColor;
+    color: white;
+    border: none;
+    width: 19.5625rem;
+}
+
 .primary-button {
     background-color: $primaryColor;
     color: white;
