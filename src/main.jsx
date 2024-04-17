@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 import App from './app'
 import './sass/index.scss'
-
+import { ProductContextProvider } from './components/context/CartContext'
 
 
 
@@ -12,7 +12,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <ScrollToTop/>
+      <ProductContextProvider>
       <App/>
+      </ProductContextProvider>
     </BrowserRouter>
   </React.StrictMode>
 )

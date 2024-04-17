@@ -1,20 +1,20 @@
 /* eslint-disable react/prop-types */
-import '../sass/button.scss'
-
-function Button({buttonType, label}) {
+import "../sass/button.scss";
 
 
-return (
+
+function Button({ buttonType, label, onClick}) {
+
+
+
+
+  return (
     <>
-        <button className={buttonType} >
-            {label}
-        </button>
+      <button className={buttonType} onClick={onClick}>
+        {label}
+      </button>
     </>
-)
-        
-       
+  );
 }
-
-
 
 export default Button;

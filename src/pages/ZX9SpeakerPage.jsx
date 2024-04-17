@@ -16,7 +16,7 @@ export default function ZX9Speaker() {
                 img="../../audio-store-assets/product-zx9-speaker/desktop/image-category-page-preview.jpg"
                 title="ZX9 Speaker"
                 desc="Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups."
-                price="$ 4,500"
+                price="$ 4,500" 
             />
             <Features 
                 quantity="1"

@@ -25,7 +25,7 @@ function NavBar({className, background}) {
                     </ul>
                     <img src={CartImage} alt="an icon of a shopping cart" onClick={() => setShowCart(!showCart)}/>
                     {showCart ? <Cart/> : null}
-                    {showCart}
+
                 </div>
 
             </nav>
