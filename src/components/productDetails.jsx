@@ -2,25 +2,20 @@
 import '../sass/product-details.scss'
 import Button from './button';
 import QuantityField from './quantityField';
-import CartReducer from "./reducer/CartReducer";
-import { cartInitState } from "./reducer/CartInitState";
-import { useReducer } from "react";
+import { useContext } from 'react';
+import { ProductContext } from './context/CartContext';
 
 
-function ProductDetails({img,title,desc,price}) {
-    const [ state, dispatch ] = useReducer(CartReducer, cartInitState)
 
 
-   const addToCart = (e) => {
-    e.preventDefault();
-    const productToAdd = cartInitState.products.find(product => product.name === title);
-    console.log(productToAdd)
-    if (productToAdd) {
-        dispatch({ type: 'add_item', payload: {img: img, title: title, price: price} });
-    }
-    console.log(state)
-   }
+function ProductDetails({product}) {
+    const value = useContext(ProductContext)
+    const { addToCart } = value;
 
+
+    const {img,title,desc,price} = product;
+
+   
 
 
     return (
@@ -33,7 +28,7 @@ function ProductDetails({img,title,desc,price}) {
                     <p>{price}</p>
                     <div className='component-product-details--actions'>
                         <QuantityField />
-                        <Button onClick={addToCart} />
+                        <Button label="Add To Cart" onClick={() => addToCart(product)} />
                     </div>
                 </div>
             </div>

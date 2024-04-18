@@ -8,14 +8,20 @@ import Footer from "../components/footer"
 
 
 export default function ZX7Speaker() {
+    const ZX7Speaker = {
+        title: "ZX7 Speaker",
+        price: "$ 3,500",
+        desc: "Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
+        img: "../../audio-store-assets/product-zx7-speaker/desktop/image-category-page-preview.jpg"
+    }
+
     return (
         <>
             <NavBar className="product-details-navbar" background="black" />
             <ProductDetails
-                img="../../audio-store-assets/product-zx7-speaker/desktop/image-category-page-preview.jpg"
-                title="ZX7 Speaker"
-                desc="Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use."
-                price="$ 3,500"
+                product={ZX7Speaker}
+
+
             />
             <Features 
                 quantity="1"

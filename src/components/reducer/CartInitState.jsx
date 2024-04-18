@@ -8,5 +8,6 @@ export const cartInitState = {
        {id: 5, name: 'ZX7 Speaker', price: 3500},
        {id: 6, name: 'YX1 Wireless Earphones', price: 599}
     ],
-    cart: []
+    cart: [],
+    total: 0
 };

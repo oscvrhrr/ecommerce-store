@@ -1,14 +1,18 @@
 /* eslint-disable react/prop-types */
 import "../sass/navbar.scss";
 import Button from "./button";
-import CartItem from "./cartItem";
+// import CartItem from "./cartItem";
 import { useContext } from "react";
 import { ProductContext } from "./context/CartContext";
 
 
 function Cart() {
-  const { state } = useContext( ProductContext );
-  const cart = state.cart;
+  const { value } = useContext(ProductContext);
+  console.log(value)
+
+
+  
+
 
 
 
@@ -20,9 +24,7 @@ function Cart() {
           <p>Remove all</p>
         </div>
         <ul>
-          {cart.map( product => (
-            <CartItem key={product.index} name={product.name} img={product.img} price={product.price}  />
-          ))}
+
         </ul>
         <div>
           <p></p>

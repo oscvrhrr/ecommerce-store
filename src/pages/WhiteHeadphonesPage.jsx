@@ -10,14 +10,20 @@ import Footer from "../components/footer"
 
 
 export default function WhiteHeadphones() {
+    const XX59Headphones = {
+        title: "XX59 Headphones",
+        price: "$ 899",
+        desc: "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move. ",
+        img: "../../audio-store-assets/product-xx59-headphones/desktop/image-category-page-preview.jpg"
+    }
+
+
     return (
         <>
             <NavBar className="product-details-navbar" background="black" />
             <ProductDetails
-                img="../../audio-store-assets/product-xx59-headphones/desktop/image-category-page-preview.jpg"
-                title="XX59 Headphones"
-                desc="Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move. "
-                price="$ 899"
+                product={XX59Headphones}
+
             />
             <Features 
                 quantity="1"

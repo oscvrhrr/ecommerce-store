@@ -8,14 +8,19 @@ import Footer from "../components/footer"
 
 
 export default function MarkOnePage() {
+    const MarkIHeadphones = {
+        title: "XX99 Mark I Headphones",
+        price: "$ 1,750",
+        desc: "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go. ",
+        img: "../../audio-store-assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg"
+    }
+
     return (
         <>
             <NavBar className="product-details-navbar" background="black" />
             <ProductDetails
-                img="../../audio-store-assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg"
-                title="XX99 Mark I Headphones"
-                desc="As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go. "
-                price="$ 1,750"
+                product={MarkIHeadphones}
+
             />
             <Features 
                 quantity="1"

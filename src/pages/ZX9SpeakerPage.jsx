@@ -9,14 +9,20 @@ import Footer from "../components/footer"
 
 
 export default function ZX9Speaker() {
+    const ZX9Speaker = {
+        title: "ZX9 Speaker",
+        price: "$ 4,500",
+        desc: "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",
+        img: "../../audio-store-assets/product-zx9-speaker/desktop/image-category-page-preview.jpg"
+
+    }
+
     return (
         <>
             <NavBar className="product-details-navbar" background="black" />
             <ProductDetails
-                img="../../audio-store-assets/product-zx9-speaker/desktop/image-category-page-preview.jpg"
-                title="ZX9 Speaker"
-                desc="Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups."
-                price="$ 4,500" 
+                product={ZX9Speaker}
+
             />
             <Features 
                 quantity="1"

@@ -8,14 +8,19 @@ import Footer from "../components/footer"
 
 
 export default function EarphoneDetails() {
+        const YX1Earphones = {
+            title: "YX1 Wireless Earphones",
+            price: "$ 599",
+            desc: "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
+            img: "../../audio-store-assets/product-yx1-earphones/desktop/image-category-page-preview.jpg"
+        }
     return (
         <>
             <NavBar className="product-details-navbar" background="black" />
             <ProductDetails
-                img="../../audio-store-assets/product-yx1-earphones/desktop/image-category-page-preview.jpg"
-                title="YX1 Wireless Earphones"
-                desc="Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature."
-                price="$ 599"
+                product={YX1Earphones}
+
+
             />
             <Features 
                 quantity="1"
