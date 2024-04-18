@@ -1,20 +1,21 @@
 /* eslint-disable react/prop-types */
-import QuantityField from "./quantityField";
+
+import '../sass/cart-item.scss'
+import QuantityField from './quantityField';
 
 
-
-export function CartItem({name, img, price}) {
+export function CartItem({item}) {
 
 
 
   return (
-    <li>
-      <img  src={img} alt="image of product"/>
-      <div>
-        <p>{price}</p>
-        <p>{name}</p>
+    <li className="component-cart-item">
+      <img  src={item.img} alt="image of product"/>
+      <div className="component-cart-item-info">
+        <p>{item.price}</p>
+        <p>{item.title}</p>
       </div>
-      <QuantityField />
+      <QuantityField/>
     </li>
   );
 }

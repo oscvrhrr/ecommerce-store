@@ -40,7 +40,9 @@
 .component-quantity-field {
     width: 7.5rem;
     height: 3rem;
+    display: flex;
     background-color: $thirdColor;
+    align-items: center;
     button {
         border: none;
     }

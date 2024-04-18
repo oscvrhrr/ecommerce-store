@@ -1,0 +1,25 @@
+@import 'variables.scss';
+
+.component-cart-item {
+    display: flex;
+    width: 19.5rem;
+    height: 4rem;
+    margin: 1.5rem 0;
+    color: black;
+    img {
+        width: 5rem;
+        border-radius: 7%;
+    }
+    .component-cart-item-info {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .component-cart-item-quantity {
+        width: 7.5rem;
+        height: 3rem;
+        background-color: $thirdColor;
+        button {
+            border: none;
+        }
+    }
+}

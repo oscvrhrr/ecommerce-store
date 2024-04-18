@@ -28,14 +28,14 @@ function Cart() {
         </div>
         <ul>
           {value.cart.map((item, index) => (
-            <CartItem key={index} item={item}/>
+            <CartItem key={index} item={item} />
           ))}
         </ul>
         <div>
           <p></p>
           <h6></h6>
         </div>
-        <Button buttonType="checkout-button" label="CHECKOUT" />
+        <Button buttonType="checkout-button" label="CHECKOUT"  />
       </aside>
     </>
   );
