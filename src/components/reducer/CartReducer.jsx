@@ -4,7 +4,6 @@ export default function CartReducer(state, action) {
     switch (action.type) {
         case 'add_item': {
             const productToAdd = action.payload;
-            console.log(productToAdd)
             const  updatedCart = [...state.cart, productToAdd];
             return {...state, cart: updatedCart}
 

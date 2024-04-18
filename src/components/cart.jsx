@@ -4,11 +4,14 @@ import Button from "./button";
 // import CartItem from "./cartItem";
 import { useContext } from "react";
 import { ProductContext } from "./context/CartContext";
-
+import CartItem from "./cartItem";
 
 function Cart() {
-  const { value } = useContext(ProductContext);
-  console.log(value)
+  const value  = useContext(ProductContext);
+
+  
+
+
 
 
   
@@ -24,7 +27,9 @@ function Cart() {
           <p>Remove all</p>
         </div>
         <ul>
-
+          {value.cart.map((item, index) => (
+            <CartItem key={index} item={item}/>
+          ))}
         </ul>
         <div>
           <p></p>
