@@ -1,18 +1,23 @@
+/* eslint-disable react/prop-types */
 import "../sass/product-details.scss";
 import { useState } from "react";
 
-function QuantityField() {
+function QuantityField({onQuantityChange}) {
   const [quantity, setQuantity] = useState(0);
+
   const decrementQuantity = () => {
+    const newQuantity = 0
     setQuantity((prevQuantity) => prevQuantity - 1);
-    if (quantity === 0) {
-      setQuantity(0);
-    }
+    onQuantityChange(newQuantity);
   };
 
   const increaseQuantity = () => {
+    const newQuantity =
     setQuantity((prevQuantity) => prevQuantity + 1);
+    onQuantityChange(newQuantity);
   };
+  
+ 
 
   return (
     <>

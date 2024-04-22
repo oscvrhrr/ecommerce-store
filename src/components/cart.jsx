@@ -23,7 +23,7 @@ function Cart() {
     <>
       <aside className="component-cart">
         <div className="cart-header">
-          <h6>Cart</h6>
+          <h6>Cart {value.cart.length}</h6>
           <p>Remove all</p>
         </div>
         <ul>

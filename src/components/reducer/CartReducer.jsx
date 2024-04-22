@@ -7,6 +7,7 @@ export default function CartReducer(state, action) {
             const  updatedCart = [...state.cart, productToAdd];
             return {...state, cart: updatedCart}
 
+
         }
         case 'remove_item': {
             const  updatedCart  = action.payload;
