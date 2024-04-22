@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import "../sass/button.scss";
+import "../sass/Button.scss";
 
 
 

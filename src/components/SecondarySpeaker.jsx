@@ -1,6 +1,6 @@
-import Button from "./button"
-import '../sass/product-section.scss'
-import '../sass/button.scss'
+import Button from "./Button"
+import '../sass/ProductSection.scss'
+import '../sass/Button.scss'
 import { Link } from "react-router-dom"
 
 function SecondarySpeaker() {

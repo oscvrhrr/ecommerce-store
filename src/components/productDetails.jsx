@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import '../sass/product-details.scss'
-import Button from './button';
-import QuantityField from './quantityField';
+import '../sass/ProductDetails.scss'
+import Button from './Button';
+import QuantityField from './QuantityField';
 import { useContext } from 'react';
 import { ProductContext } from './context/CartContext';
 

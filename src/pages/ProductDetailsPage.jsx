@@ -1,11 +1,11 @@
 
-import Features from "../components/features";
-import Footer from "../components/footer";
-import ImageGrid from "../components/imageGrid";
-import NavBar from "../components/navBar";
-import ProductBanner from "../components/productBanner";
-import ProductDetails from "../components/productDetails";
-import ProductSection from "../components/productSection";
+import Features from "../components/Features";
+import Footer from "../components/Footer";
+import ImageGrid from "../components/ImageGrid";
+import NavBar from "../components/NavBar";
+import ProductBanner from "../components/ProductBanner";
+import ProductDetails from "../components/ProductDetails";
+import ProductSection from "../components/ProductSection";
 
 
 export default function ProductDetailsPage() {

@@ -1,4 +1,4 @@
-import '../sass/product-section.scss'
+import '../sass/ProductSection.scss'
 
 
 
