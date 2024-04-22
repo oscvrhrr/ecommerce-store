@@ -9,6 +9,7 @@ import WhiteHeadphones from './pages/WhiteHeadphonesPage'
 import ZX9Speaker from './pages/ZX9SpeakerPage'
 import ZX7Speaker from './pages/ZX7SpeakerPage'
 import EarphoneDetails from './pages/EarphonesDetailsPage'
+import './sass/Index.scss'
 
 function App() {
     return (

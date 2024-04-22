@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 import App from './app'
 import { ProductContextProvider } from './components/context/CartContext'
-import './sass/Index.scss'
+
 
 
 
