@@ -8,7 +8,7 @@ import Cart from './Cart'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
-function NavBar({className, background}) {
+function Navbar({className, background}) {
     const [showCart, setShowCart] = useState(false)
   
 
@@ -36,4 +36,4 @@ function NavBar({className, background}) {
     
 }
 
-export default NavBar ;
+export default Navbar ;

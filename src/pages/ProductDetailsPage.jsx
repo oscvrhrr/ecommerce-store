@@ -2,7 +2,7 @@
 import Features from "../components/Features";
 import Footer from "../components/Footer";
 import ImageGrid from "../components/ImageGrid";
-import NavBar from "../components/NavBar";
+import Navbar from "../components/Navbar";
 import ProductBanner from "../components/ProductBanner";
 import ProductDetails from "../components/ProductDetails";
 import ProductSection from "../components/ProductSection";
@@ -18,7 +18,7 @@ export default function ProductDetailsPage() {
 
     return (
         <>
-            <NavBar className="product-details-navbar" background="black" />
+            <Navbar className="product-details-navbar" background="black" />
             <ProductDetails
                 product={MarkIIHeadphones}
             />

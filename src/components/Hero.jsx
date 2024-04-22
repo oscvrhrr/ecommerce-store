@@ -1,7 +1,7 @@
 import '../sass/Hero.scss'
 import '../sass/Button.scss'
 import HeroImg from '../../public/audio-store-assets/home/desktop/image-hero.jpg'
-import NavBar from './NavBar';
+import Navbar from './Navbar';
 import Button from './Button';
 import { Link } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ function Hero() {
   return (
     <>
       <div> 
-        <NavBar className="nav-container" />
+        <Navbar className="nav-container" />
         <div className="content-container">
           <h3>New Product</h3>
           <h1>XX99 Mark II HEADPHONES</h1>

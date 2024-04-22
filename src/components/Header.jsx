@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import NavBar from "./NavBar"
+import Navbar from "./Navbar"
 
 
 
@@ -8,7 +8,7 @@ function Header ({pageTitle}) {
     return (
         <>
             <div className="header">
-                <NavBar className="nav-container" />
+                <Navbar className="nav-container" />
                 <h2>{pageTitle}</h2>
             </div>
         </>

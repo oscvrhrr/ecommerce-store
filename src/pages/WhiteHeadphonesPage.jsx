@@ -1,4 +1,4 @@
-import NavBar from "../components/NavBar"
+import Navbar from "../components/Navbar"
 import ProductDetails from "../components/ProductDetails"
 import Features from "../components/Features"
 import ImageGrid from "../components/ImageGrid"
@@ -20,7 +20,7 @@ export default function WhiteHeadphones() {
 
     return (
         <>
-            <NavBar className="product-details-navbar" background="black" />
+            <Navbar className="product-details-navbar" background="black" />
             <ProductDetails
                 product={XX59Headphones}
 
