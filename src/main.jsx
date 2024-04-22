@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 import App from './app'
-import './sass/Index.scss'
 import { ProductContextProvider } from './components/context/CartContext'
+import './sass/Index.scss'
 
 
 
