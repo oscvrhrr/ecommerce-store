@@ -1,8 +1,8 @@
-import Header from "../components/header";
-import ProductBanner from "../components/productBanner";
-import ProductSection from "../components/productSection";
-import Footer from "../components/footer";
-import ProductLinkLeft from "../components/productLinkLeft";
+import Header from "../components/Header";
+import ProductBanner from "../components/ProductBanner";
+import ProductSection from "../components/ProductSection";
+import Footer from "../components/Footer";
+import ProductLinkLeft from "../components/ProductLinkLeft";
 
 export default function EarphonesPage() {
     return (

@@ -1,9 +1,9 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
-import ProductBanner from "../components/productBanner";
-import ProductSection from "../components/productSection";
-import ProductLinkLeft from "../components/productLinkLeft";
-import ProductLinkRight from "../components/productLinkRight";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import ProductBanner from "../components/ProductBanner";
+import ProductSection from "../components/ProductSection";
+import ProductLinkLeft from "../components/ProductLinkLeft";
+import ProductLinkRight from "../components/ProductLinkRight";
 
 
 export default function SpeakersPage() {

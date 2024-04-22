@@ -1,5 +1,5 @@
-import Product from "./product";
-import '../sass/product-section.scss'
+import Product from "./Product";
+import '../sass/ProductSection.scss'
 
 
 function ProductSection() {

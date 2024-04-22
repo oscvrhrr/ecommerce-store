@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
-import '../sass/cart-item.scss'
-import QuantityField from './quantityField';
+import '../sass/CartItem.scss'
+import QuantityField from './QuantityField';
 
 
 export function CartItem({item}) {

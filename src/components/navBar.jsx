@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-import '../sass/navbar.scss'
+import '../sass/Navbar.scss'
 // import Logo from '../starter-code/assets/shared/desktop/logo.svg'
 // import CartIcon from '../starter-code/assets/shared/desktop/icon-cart.svg'
 import Logo from '../../public/audio-store-assets/shared/desktop/logo.svg'
 import CartImage from '../../public/audio-store-assets/shared/desktop/icon-cart.svg'
-import Cart from './cart'
+import Cart from './Cart'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 

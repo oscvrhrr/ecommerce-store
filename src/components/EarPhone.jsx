@@ -1,7 +1,7 @@
-import Button from "./button"
+import Button from "./Button"
 import { Link } from "react-router-dom"
-import '../sass/product-section.scss'
-import '../sass/button.scss'
+import '../sass/ProductSection.scss'
+import '../sass/Button.scss'
 
 
 function Earphone() {

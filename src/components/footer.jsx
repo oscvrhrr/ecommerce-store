@@ -1,4 +1,4 @@
-import '../sass/footer.scss'
+import '../sass/Footer.scss'
 import Logo from '../../public/audio-store-assets/shared/desktop/logo.svg'
 
 

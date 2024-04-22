@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-import "../sass/navbar.scss";
-import Button from "./button";
+import "../sass/Navbar.scss";
+import Button from "./Button";
 // import CartItem from "./cartItem";
 import { useContext } from "react";
 import { ProductContext } from "./context/CartContext";
-import CartItem from "./cartItem";
+import CartItem from "./CartItem";
 
 function Cart() {
   const value  = useContext(ProductContext);

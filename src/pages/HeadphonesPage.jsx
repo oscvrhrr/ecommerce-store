@@ -1,10 +1,10 @@
 
-import Footer from "../components/footer"
-import Header from "../components/header"
-import ProductBanner from "../components/productBanner"
-import ProductLinkLeft from "../components/productLinkLeft"
-import ProductLinkRight from "../components/productLinkRight"
-import ProductSection from "../components/productSection"
+import Footer from "../components/Footer"
+import Header from "../components/Header"
+import ProductBanner from "../components/ProductBanner"
+import ProductLinkLeft from "../components/ProductLinkLeft"
+import ProductLinkRight from "../components/ProductLinkRight"
+import ProductSection from "../components/ProductSection"
 
 export default function HeadphonesPage() {
     return (

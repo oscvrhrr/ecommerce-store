@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import '../sass/product-left-link.scss';
-import Button from './button';
+import '../sass/ProductLeftLink.scss';
+import Button from './Button';
 import { Link } from 'react-router-dom';
 
 

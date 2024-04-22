@@ -1,10 +1,10 @@
-import NavBar from "../components/navBar"
-import ProductDetails from "../components/productDetails"
-import Features from "../components/features"
-import ImageGrid from "../components/imageGrid"
-import ProductSection from "../components/productSection"
-import ProductBanner from "../components/productBanner"
-import Footer from "../components/footer"
+import NavBar from "../components/NavBar"
+import ProductDetails from "../components/ProductDetails"
+import Features from "../components/Features"
+import ImageGrid from "../components/ImageGrid"
+import ProductSection from "../components/ProductSection"
+import ProductBanner from "../components/ProductBanner"
+import Footer from "../components/Footer"
 
 
 export default function EarphoneDetails() {

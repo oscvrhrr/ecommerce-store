@@ -1,10 +1,10 @@
 import Earphone from "../components/EarPhone";
 import SecondarySpeaker from "../components/SecondarySpeaker";
-import Footer from "../components/footer";
-import Hero from "../components/hero";
-import MainSpeaker from "../components/mainSpeaker";
-import ProductBanner from "../components/productBanner";
-import ProductSection from "../components/productSection";
+import Footer from "../components/Footer";
+import Hero from "../components/Hero";
+import MainSpeaker from "../components/MainSpeaker";
+import ProductBanner from "../components/ProductBanner";
+import ProductSection from "../components/ProductSection";
 
 export default function HomePage() {
     return (

@@ -1,8 +1,8 @@
-import '../sass/hero.scss'
-import '../sass/button.scss'
+import '../sass/Hero.scss'
+import '../sass/Button.scss'
 import HeroImg from '../../public/audio-store-assets/home/desktop/image-hero.jpg'
-import NavBar from './navBar';
-import Button from './button';
+import NavBar from './NavBar';
+import Button from './Button';
 import { Link } from 'react-router-dom';
 
 function Hero() {

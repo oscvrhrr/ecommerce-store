@@ -1,5 +1,5 @@
-import '../sass/product-section.scss'
-import Button from "./button";
+import '../sass/ProductSection.scss'
+import Button from "./Button";
 import { Link } from 'react-router-dom';
 
 function MainSpeaker() {

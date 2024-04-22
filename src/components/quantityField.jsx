@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-import "../sass/product-details.scss";
+import "../sass/ProductDetails.scss";
 import { useState } from "react";
 
 function QuantityField({onQuantityChange}) {

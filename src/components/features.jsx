@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import '../sass/product-details.scss'
+import '../sass/ProductDetails.scss'
 
 
 
