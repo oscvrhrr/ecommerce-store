@@ -15,7 +15,7 @@ export function CartItem({item}) {
         <p>{item.price}</p>
         <p>{item.title}</p>
       </div>
-      <QuantityField/>
+      <QuantityField quantity={item.quantity}/>
     </li>
   );
 }

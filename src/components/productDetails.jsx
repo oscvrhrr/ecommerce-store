@@ -2,23 +2,31 @@
 import '../sass/ProductDetails.scss'
 import Button from './Button';
 import QuantityField from './QuantityField';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { ProductContext } from './context/CartContext';
 
 
 
 
 function ProductDetails({product}) {
+    const [quantity, setQuantity] = useState(0);
     const value = useContext(ProductContext)
+
     const { addToCart } = value;
-    const [quantity, setQuantity] = useState(0)
+
+        const decrementQuantity = () => {
+        setQuantity((prevQuantity) => prevQuantity - 1);
+      };
+    
+      const increaseQuantity = () => {
+        setQuantity((prevQuantity) => prevQuantity + 1);
+      };
 
 
-    const {img,title,desc,price} = product;
 
-    const handleQuantityChange = (newQuantity) => {
-        setQuantity(newQuantity);
-      }
+    const {img,title,desc,price } = product;
+
+    
 
 
     return (
@@ -30,7 +38,7 @@ function ProductDetails({product}) {
                     <p>{desc}</p>
                     <p>{price}</p>
                     <div className='component-product-details--actions'>
-                        <QuantityField onQuantityChange={handleQuantityChange}/>
+                        <QuantityField handleDecrease={decrementQuantity} handleIncrease={increaseQuantity} quantity={quantity}/>
                         <Button label="Add To Cart" onClick={() => addToCart(product)} />
                     </div>
                 </div>

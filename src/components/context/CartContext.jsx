@@ -10,12 +10,14 @@ import CartReducer from "../reducer/CartReducer";
 export const ProductContext = React.createContext(cartInitState);
 
 export const ProductContextProvider = ({ children }) => {
-    const [ state, dispatch ] = useReducer(CartReducer, cartInitState)
+    const [ state, dispatch ] = useReducer(CartReducer, cartInitState);
 
-    const addToCart = (product) =>  {
+
+
+    const addToCart = (product, quantity) =>  {
 
         // updateTotal(product)
-        dispatch({type: 'add_item', payload: product })
+        dispatch({type: 'add_item', payload: product, quantity })
 
     }
 
