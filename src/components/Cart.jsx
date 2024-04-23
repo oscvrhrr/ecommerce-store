@@ -8,7 +8,7 @@ import CartItem from "./CartItem";
 
 function Cart() {
   const value  = useContext(ProductContext);
-
+  
   
 
 

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React,{ useReducer } from "react";
+import React,{ useReducer, useEffect } from "react";
 import { cartInitState } from "../reducer/CartInitState";
 import CartReducer from "../reducer/CartReducer";
 
@@ -9,8 +9,24 @@ import CartReducer from "../reducer/CartReducer";
 
 export const ProductContext = React.createContext(cartInitState);
 
+
 export const ProductContextProvider = ({ children }) => {
-    const [ state, dispatch ] = useReducer(CartReducer, cartInitState);
+    const [ state, dispatch ] = useReducer(CartReducer, JSON.parse(window.localStorage.getItem('Shopping_Cart')) || cartInitState);
+
+
+    useEffect(() => {
+        const storedState = window.localStorage.getItem('Shopping_Cart');
+        if (storedState) {
+            dispatch({ type: 'restore_state', payload: JSON.parse(storedState) });
+        }
+    }, [])
+
+
+    useEffect(() => {
+        window.localStorage.setItem('Shopping_Cart', JSON.stringify(state))
+    }, [state])
+
+    
 
 
 

@@ -1,5 +1,6 @@
 
 
+
 export default function CartReducer(state, action) {
     switch (action.type) {
         case 'add_item': {
@@ -21,6 +22,10 @@ export default function CartReducer(state, action) {
             }
 
         }
+        case 'restore_state': {
+            const stateFromLocal = JSON.parse(localStorage.getItem('Shopping_Cart'));
+            return { ...stateFromLocal };
+        }
         case 'remove_item': {
             const  updatedCart  = action.payload;
             return {...state, cart: updatedCart}
@@ -29,6 +34,7 @@ export default function CartReducer(state, action) {
             const  total  = action.payload;
             return {...state, total: total }
         }
+        
 
         default: 
             return state

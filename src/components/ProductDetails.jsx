@@ -22,7 +22,7 @@ function ProductDetails({product}) {
         setQuantity((prevQuantity) => prevQuantity + 1);
       };
 
-
+     
 
     const {img,title,desc,price } = product;
 

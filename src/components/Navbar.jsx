@@ -6,10 +6,18 @@ import Logo from '../../public/audio-store-assets/shared/desktop/logo.svg'
 import CartImage from '../../public/audio-store-assets/shared/desktop/icon-cart.svg'
 import Cart from './Cart'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
+const cartFromLocal = JSON.parse(localStorage.getItem('showCart'));
 
 function Navbar({className, background}) {
-    const [showCart, setShowCart] = useState(false)
+    const [showCart, setShowCart] = useState(cartFromLocal);
+
+    
+      useEffect(() => {
+        window.localStorage.setItem('showCart', JSON.stringify(showCart));
+      }, [showCart]);
+    
   
 
     return (
@@ -23,7 +31,7 @@ function Navbar({className, background}) {
                         <Link className='link' to='/speakers'>Speakers</Link>
                         <Link className='link' to='/earphones'>Earphones</Link>
                     </ul>
-                    <img src={CartImage} alt="an icon of a shopping cart" onClick={() => setShowCart(!showCart)}/>
+                    <img src={CartImage} alt="an icon of a shopping cart" onClick={() => setShowCart(prevShowCart => !prevShowCart)}/>
                     {showCart ? <Cart/> : null}
 
                 </div>
