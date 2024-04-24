@@ -26,7 +26,7 @@ function Cart() {
           <h6>Cart {value.cart.length}</h6>
           <p>Remove all</p>
         </div>
-        <ul>
+        <ul className="scroll-list">
           {value.cart.map((item, index) => (
             <CartItem key={index} item={item} />
           ))}
