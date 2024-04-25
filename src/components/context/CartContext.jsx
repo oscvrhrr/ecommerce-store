@@ -31,24 +31,27 @@ export const ProductContextProvider = ({ children }) => {
 
 
     const addToCart = (product, quantity) =>  {
-
-        // updateTotal(product)
         dispatch({type: 'add_item', payload: product, quantity })
-
-    }
+    };
 
     const removeFromCart = () => {
         const updatedCart = state.cart.filter(item => item === null);
-
-        dispatch({type: 'remove_item', payload: updatedCart})
-    }
+        dispatch({type: 'clear_cart', payload: updatedCart});
+    };
 
     const handleDecrease = (itemTitle) => {
         const item = state.cart.find(item => item.title === itemTitle);
         if (item) {
             dispatch({type: 'decrease_quantity', payload: item.title })
         }
-    }
+    };
+
+    const handleIncrease = (itemTitle) => {
+        const item = state.cart.find(item => item.title === itemTitle);
+        if (item) {
+            dispatch({type: 'increase_quantity', payload: item.title })
+        }
+    };
 
     // const updateTotal = (product) => {
     //     let total = 0;
@@ -63,7 +66,8 @@ export const ProductContextProvider = ({ children }) => {
         cart: state.cart,
         addToCart,
         removeFromCart,
-        handleDecrease
+        handleDecrease,
+        handleIncrease
     }
 
 

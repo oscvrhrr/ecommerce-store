@@ -26,14 +26,6 @@ export default function CartReducer(state, action) {
             const stateFromLocal = JSON.parse(localStorage.getItem('Shopping_Cart'));
             return { ...stateFromLocal };
         }
-        case 'remove_item': {
-            const  updatedCart  = action.payload;
-            return {...state, cart: updatedCart}
-        }
-        case 'total_sum': {
-            const  total  = action.payload;
-            return {...state, total: total }
-        }
         case 'decrease_quantity': {
             const  itemTitle  = action.payload;
             const updatedCart = state.cart.map(item => {
@@ -43,6 +35,24 @@ export default function CartReducer(state, action) {
                 return item
             });
             return {...state, cart: updatedCart}
+        }
+        case 'increase_quantity': {
+            const  itemTitle  = action.payload;
+            const updatedCart = state.cart.map(item => {
+                if(item.title === itemTitle) {
+                    return {...item, quantity: Math.max(0, item.quantity + 1) }
+                }
+                return item
+            });
+            return {...state, cart: updatedCart}
+        }
+        case 'clear_cart': {
+            const  updatedCart  = action.payload;
+            return {...state, cart: updatedCart}
+        }
+        case 'total_sum': {
+            const  total  = action.payload;
+            return {...state, total: total }
         }
 
         default: 
