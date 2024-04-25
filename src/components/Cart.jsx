@@ -9,10 +9,7 @@ import CartItem from "./CartItem";
 function Cart() {
   const value  = useContext(ProductContext);
   
-  
-
-
-
+  const { removeFromCart } = value;
 
   
 
@@ -23,8 +20,8 @@ function Cart() {
     <>
       <aside className="component-cart">
         <div className="cart-header">
-          <h6>Cart {value.cart.length}</h6>
-          <p>Remove all</p>
+          <h6>Cart ({value.cart.length})</h6>
+          <p className="cursor" onClick={() => removeFromCart()}>Remove all</p>
         </div>
         <ul className="scroll-list">
           {value.cart.map((item, index) => (

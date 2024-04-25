@@ -37,8 +37,8 @@ export const ProductContextProvider = ({ children }) => {
 
     }
 
-    const removeFromCart = (product) => {
-        const updatedCart = state.cart.filter(item => item !== product);
+    const removeFromCart = () => {
+        const updatedCart = state.cart.filter(item => item === null);
 
         dispatch({type: 'remove_item', payload: updatedCart})
     }
