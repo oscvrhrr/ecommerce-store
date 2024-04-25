@@ -38,7 +38,7 @@ function ProductDetails({product}) {
                     <p>{desc}</p>
                     <p>{price}</p>
                     <div className='component-product-details--actions'>
-                        <QuantityField handleDecrease={decrementQuantity} handleIncrease={increaseQuantity} quantity={quantity}/>
+                        <QuantityField onHandleDecrease={decrementQuantity} onHandleIncrease={increaseQuantity} quantity={quantity}/>
                         <Button label="Add To Cart" onClick={() => addToCart(product)} />
                     </div>
                 </div>

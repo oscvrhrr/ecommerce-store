@@ -43,6 +43,13 @@ export const ProductContextProvider = ({ children }) => {
         dispatch({type: 'remove_item', payload: updatedCart})
     }
 
+    const handleDecrease = (itemTitle) => {
+        const item = state.cart.find(item => item.title === itemTitle);
+        if (item) {
+            dispatch({type: 'decrease_quantity', payload: item.title })
+        }
+    }
+
     // const updateTotal = (product) => {
     //     let total = 0;
     //     product.forEach(item => total += item.price);
@@ -56,6 +63,7 @@ export const ProductContextProvider = ({ children }) => {
         cart: state.cart,
         addToCart,
         removeFromCart,
+        handleDecrease
     }
 
 

@@ -1,12 +1,17 @@
 /* eslint-disable react/prop-types */
 
+import { useContext } from 'react';
 import '../sass/CartItem.scss'
 import QuantityField from './QuantityField';
+import { ProductContext } from './context/CartContext';
 
 
 export function CartItem({item}) {
+  const value = useContext(ProductContext);
+  const { handleDecrease } = value
 
- 
+
+  
   
 
 
@@ -18,7 +23,7 @@ export function CartItem({item}) {
         <p>{item.title}</p>
 
       </div>
-      <QuantityField quantity={item.quantity}/>
+      <QuantityField onHandleDecrease={() => handleDecrease(item.title)}  quantity={item.quantity}/>
     </li>
   );
 }

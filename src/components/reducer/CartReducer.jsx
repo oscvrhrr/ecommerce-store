@@ -34,7 +34,16 @@ export default function CartReducer(state, action) {
             const  total  = action.payload;
             return {...state, total: total }
         }
-        
+        case 'decrease_quantity': {
+            const  itemTitle  = action.payload;
+            const updatedCart = state.cart.map(item => {
+                if(item.title === itemTitle) {
+                    return {...item, quantity: Math.max(0, item.quantity - 1) }
+                }
+                return item
+            });
+            return {...state, cart: updatedCart}
+        }
 
         default: 
             return state
