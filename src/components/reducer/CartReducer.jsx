@@ -14,7 +14,7 @@ export default function CartReducer(state, action) {
                     }
                     return item;
                 });
-                return { ...state, cart: updatedCart };
+                return { ...state, cart: updatedCart, };
             } else {
                 // When adding a new item to the cart, initialize its quantity to 1
                 const updatedCart = [...state.cart, { ...productToAdd, quantity: 1 }];

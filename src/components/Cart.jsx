@@ -9,12 +9,9 @@ import CartItem from "./CartItem";
 function Cart() {
   const value  = useContext(ProductContext);
   
-  const { removeFromCart } = value;
+  const { removeFromCart, total } = value;
 
-  
-
-
-
+ 
 
   return (
     <>
@@ -28,9 +25,9 @@ function Cart() {
             <CartItem key={index} item={item} />
           ))}
         </ul>
-        <div>
-          <p></p>
-          <h6></h6>
+        <div className="total">
+          <p>TOTAL</p>
+          <h6>{total}</h6>
         </div>
         <Button buttonType="checkout-button" label="CHECKOUT"  />
       </aside>

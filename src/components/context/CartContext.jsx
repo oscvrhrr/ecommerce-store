@@ -37,12 +37,14 @@ export const ProductContextProvider = ({ children }) => {
     const removeFromCart = () => {
         const updatedCart = state.cart.filter(item => item === null);
         dispatch({type: 'clear_cart', payload: updatedCart});
+        value.updateTotal()
     };
 
     const handleDecrease = (itemTitle) => {
         const item = state.cart.find(item => item.title === itemTitle);
         if (item) {
             dispatch({type: 'decrease_quantity', payload: item.title })
+            value.updateTotal()
         }
     };
 
@@ -50,15 +52,20 @@ export const ProductContextProvider = ({ children }) => {
         const item = state.cart.find(item => item.title === itemTitle);
         if (item) {
             dispatch({type: 'increase_quantity', payload: item.title })
+            value.updateTotal()
         }
     };
 
-    // const updateTotal = (product) => {
-    //     let total = 0;
-    //     product.forEach(item => total += item.price);
+    const updateTotal = () => {
+        let total = 0;
+        state.cart.forEach(item =>  {
+            const price = parseFloat(item.price.replace(/[$,]/g, ''))
+            total += price * item.quantity;
 
-    //     dispatch({type: 'total_sum', payload: total})
-    // }
+        });
+        dispatch({type: 'total_sum', payload: total})
+    }
+
 
     const value = {
 
@@ -67,7 +74,8 @@ export const ProductContextProvider = ({ children }) => {
         addToCart,
         removeFromCart,
         handleDecrease,
-        handleIncrease
+        handleIncrease,
+        updateTotal
     }
 
 
