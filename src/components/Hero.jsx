@@ -1,6 +1,7 @@
 import '../sass/Hero.scss'
 import '../sass/Button.scss'
 import HeroImg from '../../public/audio-store-assets/home/desktop/image-hero.jpg'
+import TabImg from '../../public/audio-store-assets/home/tablet/image-header.jpg'
 import Navbar from './Navbar';
 import Button from './Button';
 import { Link } from 'react-router-dom';
@@ -23,7 +24,10 @@ function Hero() {
           </Link>
         </div>
         <div className='hero-img--size'>
-          <img src={HeroImg} alt="an image of Headphones" />
+          <img 
+            srcSet={`${TabImg} 900w, ${HeroImg}`}
+            src={HeroImg}
+           alt="an image of Headphones" />
         </div>
       </div>
     
