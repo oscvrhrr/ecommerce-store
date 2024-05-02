@@ -155,5 +155,68 @@ section {
     }
 }
 
+@media screen and (max-width: 770px) {
+    .container-product {
+        .product {
+            width: 10.9rem;
+            margin: .5rem;
+        }
+    }
 
+    .main-speaker-component {
+        background-color: $primaryColor;
+        width: 35.06rem;
+        height: 35rem;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        img {
+            height: 75%;
+        }
+        div {
+            padding: 5rem 1.5rem;
+            width: 30%;
+            color: white;
+            font-family: "Manrope-reg";
+            h1 {
+                
+                font-size: $headOneFontSize;
+                width: 16.3125rem;
+            }
+            p {
+                width: 16.3125rem;
+                color: hsla(0, 0%, 100%, 0.75);
+            }
+        }
+        
+    }
+
+    .block-product-banner {
+        margin: 7.625rem 11.5rem;
+        display: flex;
+        .block-product-banner--content {
+            font-family: 'Manrope-bold';
+            padding: 7rem 7rem 0 0;
+            h2 {
+                font-size: $headTwoFontSize;
+                text-transform: uppercase;
+                margin-bottom: 2rem;
+                span {
+                    color: $primaryColor;
+                }
+            }
+            p {
+                font-family: 'Manrope-reg';
+                color: hsla(0, 0%, 0%, 0.5);
+                line-height: $paraLineHeight;
+            }
+    
+        }
+        img {
+            border-radius: 8px;
+            width: 30%;
+        }
+    }
+        
+}
 

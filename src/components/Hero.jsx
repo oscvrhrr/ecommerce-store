@@ -9,7 +9,7 @@ function Hero() {
 
   return (
     <>
-      <div> 
+      <div className='hero'> 
         <Navbar className="nav-container" />
         <div className="content-container">
           <h3>New Product</h3>
