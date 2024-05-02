@@ -38,9 +38,27 @@ footer {
 
 @media screen and (max-width: 770px) {
     footer {
-        padding: initial;
-        p {
-            margin: initial;
+        padding: 4rem 2.5rem 3rem;
+        display: inline-block;
+        position: relative;
+        .footer-content {
+            width: initial;
         }
+        ul {
+            li {
+                display: none;
+            }
+        }
+        .block-socials {
+            padding: initial;
+            position: absolute;
+            right: 10%;
+            bottom: 17%;
+            img {
+                margin: 0 .5rem;
+            }
+    
+        }
+        
     }
 }
