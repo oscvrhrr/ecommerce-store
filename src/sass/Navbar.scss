@@ -133,26 +133,16 @@
 @media screen and (max-width: 770px) {
 
   .nav-container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    color: white;
-    display: flex;
-    justify-content: center;
+    
     .navcontent {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: initial;
-      height: 6rem;
-      padding: 0 10rem;
-      border-bottom: solid 1px hsla(0, 0%, 59%, 0.2);
+      
+      // width: initial;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   
     .nav-menu {
-      width: 29rem;
-      margin-right: 5rem;
+      display: none;
     }
     .link {
       text-decoration: none;

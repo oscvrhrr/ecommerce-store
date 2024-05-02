@@ -53,12 +53,14 @@ div {
       position: absolute;
       background-color: transparent;
       color: white;
-      top: 29%;
-      width: 20rem;
+      top: 20%;
+      left: 25.5%;
+      width: 23.6rem;
       z-index: 2;
       margin: 0 0 0 5rem;
       font-family: $regFont;
-      margin: 0 0 0 10.31rem;
+      margin: initial;
+      text-align: center;
       h1 {
         font-size: $headOneFontSize;
         font-family: $boldFont;

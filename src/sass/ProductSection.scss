@@ -156,12 +156,21 @@ section {
 }
 
 @media screen and (max-width: 770px) {
-    .container-product {
-        .product {
-            width: 10.9rem;
-            margin: .5rem;
+
+    .product-section {
+        margin: initial;
+        padding: 6rem 2.5rem;
+        .container-product {
+
+            .product {
+                width: 13.9rem;
+                margin: .5rem;
+            }
         }
+        
     }
+
+    
 
     .main-speaker-component {
         background-color: $primaryColor;

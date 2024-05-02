@@ -13,7 +13,7 @@ function ProductSection() {
 
     return (
         <>
-            <section>
+            <section className="product-section">
                 <Product img={images.headphones} name="Headphones" path="/headphones"/>
                 <Product img={images.speakers} name="Speakers" path="/speakers" />
                 <Product img={images.earphones} name="Earphones" path="/earphones" />
