@@ -171,33 +171,35 @@ section {
     }
 
     
+    .section__main-speaker {
+        display: block;
+        margin: 0 2.5rem 2rem;
+        .main-speaker-component {
+            background-color: $primaryColor;
+            width: 43.06rem;
+            height: 45rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 8px;
+            img {
+                margin-top: 3.25rem;
+                margin-bottom: 4rem;
+                height: 14.8rem;
+            }
+            div {
+                padding: initial;
+                width: 21.8rem;
+                text-align: center;
+                h1 {
+                    width: initial;
+                }
+                p {
+                    width: initial;
+                }
+            }
+        }
 
-    .main-speaker-component {
-        background-color: $primaryColor;
-        width: 35.06rem;
-        height: 35rem;
-        display: flex;
-        align-items: center;
-        border-radius: 8px;
-        img {
-            height: 75%;
-        }
-        div {
-            padding: 5rem 1.5rem;
-            width: 30%;
-            color: white;
-            font-family: "Manrope-reg";
-            h1 {
-                
-                font-size: $headOneFontSize;
-                width: 6.3125rem;
-            }
-            p {
-                width: 6.3125rem;
-                color: hsla(0, 0%, 100%, 0.75);
-            }
-        }
-        
     }
 
     .block-product-banner {
