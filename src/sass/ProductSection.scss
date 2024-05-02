@@ -202,6 +202,50 @@ section {
 
     }
 
+    .secondary-speaker-component {
+        background-image: url('../../public/audio-store-assets/home/tablet/image-speaker-zx7.jpg');
+        margin: 0 2.5rem;
+        height: 20rem;
+        border-radius: 8px;
+        .secondary-speaker-component-container {
+            width: 12.75em;
+            margin: 0 6rem;
+            padding: 7rem 0;
+            h4 {
+                font-size: $headFourFontSize;
+            }
+            
+        }
+    
+    }
+
+    .block-earphone {
+        display: flex;
+        margin: 2rem 0 0 2.5rem;
+        background-color: white;
+        border-radius: 8px;
+        .earphone-img {
+            background-image: url('../../public/audio-store-assets/product-yx1-earphones/desktop/image-gallery-2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 21.1rem;
+            height: 20rem;
+            border-radius: 8px;
+        }
+        .block-content {
+            background-color: $thirdColor;
+            width: 21.1rem;
+            margin-left: .75rem;
+            border-radius: 8px;
+            padding: 6rem 2.5rem;
+            h4 {
+                font-size: $headFourFontSize;
+                padding-bottom: 1.5rem;
+            }
+        }
+    }
+    
+
     .block-product-banner {
         margin: 7.625rem 11.5rem;
         display: flex;
