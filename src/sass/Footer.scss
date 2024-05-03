@@ -41,6 +41,9 @@ footer {
         padding: 4rem 2.5rem 3rem;
         display: inline-block;
         position: relative;
+        p {
+            margin: initial;
+        }
         .footer-content {
             width: initial;
         }

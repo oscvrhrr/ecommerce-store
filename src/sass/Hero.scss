@@ -89,16 +89,24 @@ div {
 
 @media screen and (max-width: 450px) {
   .hero {
-    width: 100%;
+    position: relative;
 
     .content-container {
+      width: 20.5rem;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       h1 {
         font-size: 2rem;
       }
-      width: 5rem;
       p {
-        width: 5rem;
+        width: initial;
       }
     }
+  }
+
+  .hero-img--size img {
+    object-fit: cover;
+    height: 37.5rem;
   }
 }
