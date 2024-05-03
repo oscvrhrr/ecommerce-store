@@ -86,3 +86,15 @@ div {
 
 
 }
+
+@media screen and (max-width: 450px) {
+  .hero {
+    width: 100%;
+    .content-container {
+      width: 5rem;
+      p {
+        width: 5rem;
+      }
+    }
+  }
+}
