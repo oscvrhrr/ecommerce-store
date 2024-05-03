@@ -309,24 +309,35 @@ section {
 @media screen and (max-width:450px) {
     .product-section {
         flex-direction: column;
+        padding: 6rem 1.5rem;
+        .container-product {
+          
+            .product {
+                width: 20.4375rem;
+
+                margin: 0 0 2.5rem 0;
+                padding-bottom: 3rem;
+            }
+
+        }
     }
 
     .section__main-speaker {
       
         .main-speaker-component {
             width: initial;
-            // img {
+            img {
               
-            // }
-            // div {
+            }
+            div {
                 
-            //     h1 {
+                h1 {
                    
-            //     }
-            //     p {
+                }
+                p {
                     
-            //     }
-            // }
+                }
+            }
         }
 
     }
