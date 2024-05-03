@@ -90,7 +90,11 @@ div {
 @media screen and (max-width: 450px) {
   .hero {
     width: 100%;
+
     .content-container {
+      h1 {
+        font-size: 2rem;
+      }
       width: 5rem;
       p {
         width: 5rem;

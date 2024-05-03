@@ -26,8 +26,8 @@ function Hero() {
         </div>
         <div className='hero-img--size'>
           <img 
-            srcSet={`${MobImg} 750w, ${TabImg} 1536w, ${HeroImg} 2880w`}
             src={HeroImg}
+            srcSet={`${MobImg} 750w, ${TabImg} 1536w, ${HeroImg} 2880w`}
            alt="an image of Headphones" />
         </div>
       </div>
