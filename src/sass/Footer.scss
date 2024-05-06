@@ -75,6 +75,7 @@ footer {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             img {
                 width: 8.95rem;
                 height: 1.6rem;
@@ -89,9 +90,16 @@ footer {
         p {
             text-align: center;
         }
-        .block-socials {
-            position: initial;
-            margin-top: 3rem;
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: initial;
+            .block-socials {
+                position: initial;
+               margin-top: 3rem;
+    
+            }
         }
     }
 }
