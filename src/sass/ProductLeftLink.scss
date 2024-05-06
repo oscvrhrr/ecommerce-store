@@ -108,3 +108,36 @@
         }
     }
 }
+
+@media  screen and (max-width: 450px) {
+    .component-product-left-link {
+        margin: 4rem auto;
+        width: 20.43rem;
+
+        img {
+            width: 20.43rem;
+        }
+        div {
+            width: 20.43rem;
+            height: 21.25rem;
+            h2 {
+                width: initial;
+            }
+        }
+    }
+
+    .component-product-right-link {
+        margin: 4rem auto;
+        width: 20.43rem;
+        img {
+            width: initial;
+        }
+        div {
+            height: 21.25rem;
+            width: 20.43rem;
+            h2 {
+                width: initial;
+            }
+        }
+    }
+}

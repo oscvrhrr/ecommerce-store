@@ -163,5 +163,10 @@
 }
 
 @media screen and (max-width:450px) {
-  
+  .header {
+    height: 12rem;
+    h2 {
+      padding-top: 7.625rem;
+    }
+  }
 }

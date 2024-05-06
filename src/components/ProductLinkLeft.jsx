@@ -3,12 +3,12 @@ import '../sass/ProductLeftLink.scss';
 import Button from './Button';
 import { Link } from 'react-router-dom';
 
-function ProductLinkLeft({title, desc, img, path, tabImg}) {
+function ProductLinkLeft({title, desc, img, path, tabImg, mobImg}) {
     return (
         <>
             <article className='component-product-left-link'>
                 <img 
-                 srcSet={`${tabImg} 900w, ${img}`}
+                 srcSet={`${mobImg} 654w, ${tabImg} 1378w, ${img} `}
                  src={img}
                  alt="" />
                 <div>

@@ -4,12 +4,12 @@ import Button from "./Button";
 import { Link } from "react-router-dom";
 
 
-function ProductLinkRight({ title, desc, img, path, tabImg }) {
+function ProductLinkRight({ title, desc, img, path, tabImg, mobImg}) {
   return (
     <>
       <article className="component-product-right-link">
         <img
-            srcSet={`${tabImg} 900w, ${img}`}
+            srcSet={`${mobImg} 654w, ${tabImg} 1378w, ${img}`}
             src={img}
             alt="" 
         />

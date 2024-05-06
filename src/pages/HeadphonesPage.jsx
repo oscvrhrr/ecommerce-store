@@ -11,6 +11,7 @@ export default function HeadphonesPage() {
         <>
             <Header pageTitle="Headphones" />
             <ProductLinkLeft 
+                mobImg='../../audio-store-assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg'
                 tabImg='../../audio-store-assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg'
                 img="../../audio-store-assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg"
                 title="XX99 Mark II Headphones"
@@ -18,6 +19,7 @@ export default function HeadphonesPage() {
                 path="/product-details-mark-two"
             />
             <ProductLinkRight 
+                mobImg='../../audio-store-assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg'
                 tabImg='../../audio-store-assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg'
                 img="../../audio-store-assets/product-xx99-mark-one-headphones/desktop/image-product.jpg"
                 title="XX99 Mark I Headphones"
@@ -25,6 +27,7 @@ export default function HeadphonesPage() {
                 path="/product-details-mark-one"
             />
             <ProductLinkLeft  
+                mobImg='../../audio-store-assets/product-xx59-headphones/mobile/image-category-page-preview.jpg'
                 tabImg='../../audio-store-assets/product-xx59-headphones/tablet/image-category-page-preview.jpg'
                 img="../../audio-store-assets/shared/desktop/image-xx59-headphones.jpg"
                 title="XX59 Headphones"
