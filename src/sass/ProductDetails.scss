@@ -107,3 +107,26 @@
         }
     }
 }
+
+@media screen and (max-width: 450px) {
+    .component-product-details {
+        margin: 4rem auto;
+        display: flex;
+        flex-direction: column;
+        width: 20.43rem;
+        img {
+            width: 20.43rem;
+            height: 20.43rem;
+        }
+        .component-product-details-container {
+            padding: initial;
+        }
+    }
+
+    .component-features  {
+        padding: initial;
+        .component-box--content {
+            padding: initial;
+        }
+    }
+}

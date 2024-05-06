@@ -169,4 +169,15 @@
       padding-top: 7.625rem;
     }
   }
+
+  .product-details-navbar {
+    
+    .nav-menu {
+      display: none;
+    }
+    .navcontent {
+      padding: initial;
+      justify-content: space-around;
+    }
+  }
 }
