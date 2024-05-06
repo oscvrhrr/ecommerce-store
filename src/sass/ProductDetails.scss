@@ -114,19 +114,35 @@
         display: flex;
         flex-direction: column;
         width: 20.43rem;
+        align-items: initial;
         img {
             width: 20.43rem;
             height: 20.43rem;
         }
         .component-product-details-container {
             padding: initial;
+            width: initial;
+            h2 {
+                font-size: $headFourFontSize;
+                margin-top: 4.5rem;
+            }
         }
     }
 
     .component-features  {
         padding: initial;
+        padding-top: 2rem;
+        margin: 0 auto;
+        width: 20.43rem;
+        flex-direction: column;
+        .component-features--content {
+            width: initial;
+        }
+        
         .component-box--content {
             padding: initial;
+            margin-top: 5rem;
+
         }
     }
 }
