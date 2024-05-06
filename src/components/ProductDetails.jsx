@@ -7,7 +7,6 @@ import { ProductContext } from './context/CartContext';
 
 
 
-
 function ProductDetails({product}) {
     const [quantity, setQuantity] = useState(0);
     const value = useContext(ProductContext)
@@ -32,7 +31,10 @@ function ProductDetails({product}) {
     return (
         <>
             <div className='component-product-details'>
-                <img src={img} alt="" />
+                <img 
+                src={img} 
+                alt="" 
+                />
                 <div className='component-product-details-container'>
                     <h2>{title}</h2>
                     <p>{desc}</p>

@@ -19,7 +19,7 @@ export default function EarphoneDetails() {
             <Navbar className="product-details-navbar" background="black" />
             <ProductDetails
                 product={YX1Earphones}
-
+               
 
             />
             <Features 

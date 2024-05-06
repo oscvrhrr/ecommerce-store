@@ -88,3 +88,22 @@
         margin-top: 1.6rem;
     }
 }
+
+@media screen and (max-width: 770px) {
+    .component-product-details {
+        width: 43rem;
+        margin: initial;
+        img {
+            width: 15rem;
+        }
+        .component-product-details-container {
+            width: 15rem;
+        }
+    }
+    .component-image-grid {
+        width: 10rem;
+        img {
+            width: 5rem;
+        }
+    }
+}
