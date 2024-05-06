@@ -327,18 +327,7 @@ section {
         .main-speaker-component {
             width: 20.4375rem;
             margin: 0 auto 1.5rem;
-            img {
-              
-            }
-            div {
-                
-                h1 {
-                   
-                }
-                p {
-                    
-                }
-            }
+
         }
 
     }
@@ -394,14 +383,16 @@ section {
     }
 
     .block-product-banner {
-        margin: initial;
+        margin: 7.5rem auto;
         display: flex;
-        width: 20.4rem;
+        width: 20.43rem;
         .block-product-banner--content {
             font-family: 'Manrope-bold';
             padding: initial;
             h2 {
-                font-size: $headTwoFontSize;
+                margin-top: 2.5rem;
+                font-size: $headFourFontSize;
+                letter-spacing: $headThreeLetterSpace;
                 text-transform: uppercase;
                 margin-bottom: 2rem;
                 span {
@@ -417,7 +408,8 @@ section {
         }
         img {
             border-radius: 8px;
-            width: 30%;
+            height: 18.75rem;
+
         }
     }
 }

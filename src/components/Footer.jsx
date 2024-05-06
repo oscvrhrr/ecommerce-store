@@ -13,8 +13,8 @@ function Footer() {
         <footer>
             <div className='footer-content'>
                 <img src={Logo} alt="" />
-                <p>Audiophile is an all in one stop to fulfill your audio needs. We&#x60;re a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</p>
-                <p>Copyright 2021. All Rights Reserved</p>
+                <p className='m-top--15'>Audiophile is an all in one stop to fulfill your audio needs. We&#x60;re a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</p>
+                <p className='m-top--3'>Copyright 2021. All Rights Reserved</p>
             </div>
             <ul>
                 <li>Home</li>

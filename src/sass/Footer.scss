@@ -65,3 +65,33 @@ footer {
         
     }
 }
+
+@media  screen and (max-width: 440px) {
+    footer {
+        height: 40.875rem;
+        padding-top: 3rem;
+        padding-bottom: 2.25rem;
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 8.95rem;
+                height: 1.6rem;
+            }
+        }
+        .m-top--15  {
+            margin-top: 15rem;
+        }
+        .m-top--3 {
+            margin-top: 3rem;
+        }
+        p {
+            text-align: center;
+        }
+        .block-socials {
+            position: initial;
+            margin-top: 3rem;
+        }
+    }
+}
