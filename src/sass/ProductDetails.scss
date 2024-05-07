@@ -1,148 +1,164 @@
-@import 'Variables.scss';
-
+@import "Variables.scss";
 
 .component-product-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10rem 11.5rem;
-    font-family: $regFont;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem 11.5rem;
+  font-family: $regFont;
 
-    img {
-        height: 35rem;
-        border-radius: 8px;
+  img {
+    height: 35rem;
+    border-radius: 8px;
+  }
+  .component-product-details-container {
+    padding: 4.81rem 7.75rem;
+    h2 {
+      font-size: $headTwoFontSize;
+      font-family: $boldFont;
+      text-transform: uppercase;
+      letter-spacing: $headTwoLetterSpace;
     }
-    .component-product-details-container {
-        padding: 4.81rem 7.75rem;
-        h2 {
-            font-size: $headTwoFontSize;
-            font-family: $boldFont;
-            text-transform: uppercase;
-            letter-spacing: $headTwoLetterSpace;
-        }
-        p {
-            margin: 2rem 0;
-
-        }
-        .component-product-details--actions {
-            display: flex;
-            div {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                margin-right: 1rem ;
-            }
-        }
+    p {
+      margin: 2rem 0;
     }
-    
+    .component-product-details--actions {
+      display: flex;
+      div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 1rem;
+      }
+    }
+  }
 }
 
 .component-quantity-field {
-    width: 7.5rem;
-    height: 3rem;
-    display: flex;
-    background-color: $thirdColor;
-    align-items: center;
-    color: black;
-    button {
-        border: none;
-    }
+  width: 7.5rem;
+  height: 3rem;
+  display: flex;
+  background-color: $thirdColor;
+  align-items: center;
+  color: black;
+  button {
+    border: none;
+  }
 }
 
 .component-features {
-    display: flex;
-    margin: 5rem 11.5rem;
-    font-family: $regFont;
-    .component-features--content {
-        width: 50%;
-        h3 {
-            font-size: $headThreeFontSize;
-        }
-        p {
-            margin-top: 2rem;
-        }
+  display: flex;
+  margin: 5rem 11.5rem;
+  font-family: $regFont;
+  .component-features--content {
+    width: 50%;
+    h3 {
+      font-size: $headThreeFontSize;
     }
-    .component-box--content {
-        width: 50%;
-        padding: 0 10rem;
-        h3 {
-            font-size: $headThreeFontSize;
-        }
-        ul {
-            margin-top: 2rem;
-            li {
-                list-style: none;
-            }
-        }
+    p {
+      margin-top: 2rem;
     }
+  }
+  .component-box--content {
+    width: 50%;
+    padding: 0 10rem;
+    h3 {
+      font-size: $headThreeFontSize;
+    }
+    ul {
+      margin-top: 2rem;
+      li {
+        list-style: none;
+      }
+    }
+  }
 }
 
 .component-image-grid {
-    display: flex;
-    width: 69.375rem;
-    margin: 5rem 11.5rem;
-    img {
-        border-radius: 8px;
-    }
-    .margin--top {
-        margin-top: 1.6rem;
-    }
+  display: flex;
+  width: 69.375rem;
+  margin: 5rem 11.5rem;
+  img {
+    border-radius: 8px;
+  }
+  .margin--top {
+    margin-top: 1.6rem;
+  }
 }
 
 @media screen and (max-width: 770px) {
-    .component-product-details {
-        width: 43rem;
-        margin: initial;
-        img {
-            width: 15rem;
-        }
-        .component-product-details-container {
-            width: 15rem;
-        }
+  .component-product-details {
+    width: 43rem;
+    margin: initial;
+    img {
+      width: 15rem;
     }
-    .component-image-grid {
-        width: 10rem;
-        img {
-            width: 5rem;
-        }
+    .component-product-details-container {
+      width: 15rem;
     }
+  }
+  .component-image-grid {
+    width: 10rem;
+    img {
+      width: 5rem;
+    }
+  }
 }
 
 @media screen and (max-width: 450px) {
-    .component-product-details {
-        margin: 4rem auto;
-        display: flex;
-        flex-direction: column;
-        width: 20.43rem;
-        align-items: initial;
-        img {
-            width: 20.43rem;
-            height: 20.43rem;
-        }
-        .component-product-details-container {
-            padding: initial;
-            width: initial;
-            h2 {
-                font-size: $headFourFontSize;
-                margin-top: 4.5rem;
-            }
-        }
+  .component-product-details {
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 20.43rem;
+    align-items: initial;
+    img {
+      width: 20.43rem;
+      height: 20.43rem;
+    }
+    .component-product-details-container {
+      padding: initial;
+      width: initial;
+      h2 {
+        font-size: $headFourFontSize;
+        margin-top: 4.5rem;
+      }
+    }
+  }
+
+  .component-features {
+    padding: initial;
+    padding-top: 2rem;
+    margin: 0 auto;
+    width: 20.43rem;
+    flex-direction: column;
+    .component-features--content {
+      width: initial;
     }
 
-    .component-features  {
-        padding: initial;
-        padding-top: 2rem;
-        margin: 0 auto;
+    .component-box--content {
+      padding: initial;
+      margin-top: 5rem;
+    }
+  }
+
+  .component-image-grid {
+    margin: 0 auto;
+    flex-direction: column;
+    width: 20.43rem;
+    img {
+      width: 20.43rem;
+      margin-top: 1.3rem;
+    }
+    .margin--top {
+      display: flex;
+      width: 20.43rem;
+      margin-top: 1rem;
+      img {
         width: 20.43rem;
-        flex-direction: column;
-        .component-features--content {
-            width: initial;
-        }
+        margin-top: 1rem;
         
-        .component-box--content {
-            padding: initial;
-            margin-top: 5rem;
-
-        }
+      }
     }
+  }
 }
