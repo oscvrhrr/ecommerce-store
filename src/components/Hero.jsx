@@ -29,7 +29,8 @@ function Hero() {
             src={HeroImg}
             srcSet={`${MobImg} 750w, ${TabImg} 1536w, ${HeroImg} 2880w`}
             sizes='(max-width: 450px) 100vw, 750w'
-           alt="an image of Headphones" />
+            alt="an image of Headphones" />
+            
         </div>
       </div>
     
