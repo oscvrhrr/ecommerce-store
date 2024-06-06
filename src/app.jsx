@@ -18,9 +18,10 @@ import './sass/Index.scss'
 
 
 function App() {
-    const [loading, setLoading] = useState('true')
+    const [loading, setLoading] = useState('false')
 
     useEffect(() => {
+        setLoading(true)
         setTimeout(() => {
             setLoading(false)
         }, 1750)
