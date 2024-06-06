@@ -24,7 +24,7 @@ function Hero() {
               />
           </Link>
         </div>
-        <div className='hero-img--size'>
+        <div className='hero-img--size mobile'>
           <img 
             src={HeroImg}
             srcSet={`${MobImg} 750w, ${TabImg} 1536w, ${HeroImg} 2880w`}
