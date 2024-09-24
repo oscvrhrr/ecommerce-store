@@ -11,6 +11,7 @@ import Footer from "../components/Footer"
 
 export default function WhiteHeadphones() {
     const XX59Headphones = {
+        id: 3,
         title: "XX59 Headphones",
         price: "$ 899",
         desc: "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move. ",

@@ -1,15 +1,17 @@
 /* eslint-disable react/prop-types */
 import "../sass/Navbar.scss";
 import Button from "./Button";
-// import CartItem from "./cartItem";
 import { useContext } from "react";
-import { ProductContext } from "./context/CartContext";
+import { GlobalContext } from "./context/GlobalContext";
 import CartItem from "./CartItem";
 
 function Cart() {
-  const value  = useContext(ProductContext);
+  const { state, dispatch } = useContext(GlobalContext)
   
-  const { removeFromCart, total } = value;
+  const handleClearCart = () => {
+    dispatch({ type: "CLEAR_CART"})
+  }
+
 
  
 
@@ -17,17 +19,20 @@ function Cart() {
     <>
       <aside className="component-cart">
         <div className="cart-header">
-          <h6>Cart ({value.cart.length})</h6>
-          <p className="cursor" onClick={() => removeFromCart()}>Remove all</p>
+          <h6>Cart </h6>
+          <p className="cursor" onClick={handleClearCart}>Remove all</p>
         </div>
         <ul className="scroll-list">
-          {value.cart.map((item, index) => (
-            <CartItem key={index} item={item} />
-          ))}
+         {
+           state.cart.map((item, index) => (
+            <CartItem key={index} item={item}/>
+           ))
+         }
+          
         </ul>
         <div className="total">
           <p>TOTAL</p>
-          <h6>{total}</h6>
+          <h6>{state.totalCost}</h6>
         </div>
         <Button buttonType="checkout-button" label="CHECKOUT"  />
       </aside>

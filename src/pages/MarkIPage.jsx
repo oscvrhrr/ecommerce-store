@@ -9,6 +9,7 @@ import Footer from "../components/Footer"
 
 export default function MarkOnePage() {
     const MarkIHeadphones = {
+        id: 2,
         title: "XX99 Mark I Headphones",
         price: "$ 1,750",
         desc: "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go. ",

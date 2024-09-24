@@ -9,6 +9,7 @@ import Footer from "../components/Footer"
 
 export default function ZX7Speaker() {
     const ZX7Speaker = {
+        id: 5,
         title: "ZX7 Speaker",
         price: "$ 3,500",
         desc: "Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",

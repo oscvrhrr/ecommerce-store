@@ -10,6 +10,7 @@ import Footer from "../components/Footer"
 
 export default function ZX9Speaker() {
     const ZX9Speaker = {
+        id: 4,
         title: "ZX9 Speaker",
         price: "$ 4,500",
         desc: "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",

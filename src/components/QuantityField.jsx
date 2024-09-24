@@ -2,7 +2,7 @@
 import "../sass/ProductDetails.scss";
 
 
-function QuantityField({onHandleDecrease, onHandleIncrease, quantity}) {
+function QuantityField({ quantity}) {
   
   
  
@@ -10,9 +10,9 @@ function QuantityField({onHandleDecrease, onHandleIncrease, quantity}) {
   return (
     <>
       <div className="component-quantity-field">
-        <button onClick={onHandleDecrease}>-</button>
+        <button>-</button>
         <p>{quantity}</p>
-        <button onClick={onHandleIncrease}>+</button>
+        <button>+</button>
       </div>
     </>
   );

@@ -10,6 +10,7 @@ import ProductSection from "../components/ProductSection";
 
 export default function ProductDetailsPage() {
     const MarkIIHeadphones = {
+        id: 1,
         title: "XX99 Mark II Headphones",
         price: "$ 2,999",
         desc: "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
