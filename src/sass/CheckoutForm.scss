@@ -2,24 +2,61 @@
 
 .pg-body--white {
     background-color: #CFCFCF;
-    
+    font-family: $regFont;
 }
 
 .form {
     background-color: #FFFFFF;
     width: 45.625rem;
     height: 70rem;
-    margin-left: 10rem;
-    margin-top: 8.8rem;
+
+    margin: 8.8rem 0 8.8rem 10rem;
     padding: 3.375rem 3rem 3rem 3rem;
+    
+
+    h1 {
+        font-size: $headThreeFontSize;
+        letter-spacing: $headThreeLetterSpace;
+        
+    }
+
+    .form-h2 {
+        font-family: $boldFont;
+        color: $primaryColor;
+        font-size: $paraFontSize;
+        text-transform: uppercase;
+        line-height: $paraLineHeight;
+        letter-spacing: $headSixLetterSpace;
+        margin-top: 2.56rem;
+        margin-bottom: 1rem;
+    }   
+
+    .form-address-label {
+        font-weight: bold;
+    }
+
+    .form-address {
+        border-radius: 0.5rem;
+        border-width: 1px;
+        border-color: #CFCFCF;
+        border-style: solid;
+        padding: 1rem 1.5rem;
+        width: 39.6rem;
+        height: 3.5rem;
+        margin-top: .5rem;
+        margin-bottom: 1.5rem;
+    }
 
     .form-box {
         display: inline-flex;
         flex-wrap: wrap;
+        justify-content: space-between;
 
         label {
             display: flex;
             flex-direction: column;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
 
         .input-med {
             width: 19.3rem;
@@ -28,6 +65,8 @@
             border-width: 1px;
             border-color: #CFCFCF;
             border-style: solid;
+            padding: 1rem 1.5rem;
+            margin-top: .5rem;
         }
 
         }
