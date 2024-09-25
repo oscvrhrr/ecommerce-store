@@ -34,7 +34,7 @@ function Navbar({className, background}) {
                         <Link className='link' to='/speakers'>Speakers</Link>
                         <Link className='link' to='/earphones'>Earphones</Link>
                     </ul>
-                    <img src={CartImage} alt="an icon of a shopping cart" onClick={handleCart}/>
+                    <img className='cart--hover' src={CartImage} alt="an icon of a shopping cart" onClick={handleCart}/>
                     { isOpen && <Cart/> }
 
 

@@ -40,6 +40,7 @@
   .link:hover {
     color: $primaryColor;
   }
+  
 }
 
 .product-details-navbar {
@@ -77,6 +78,9 @@
   }
 }
 
+.cart--hover:hover {
+  filter: brightness(0%) saturate(100%) invert(73%) sepia(100%)  hue-rotate(325deg)  contrast(88%);
+}
 .nav-background-color {
   background-color: #000000;
 }
@@ -187,3 +191,4 @@
     right: initial;
   }
 }
+
