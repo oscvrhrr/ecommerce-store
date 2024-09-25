@@ -4,6 +4,7 @@ import Button from "./Button";
 import { useContext } from "react";
 import { GlobalContext } from "./context/GlobalContext";
 import CartItem from "./CartItem";
+import { Link } from "react-router-dom";
 
 function Cart() {
   const { state, dispatch } = useContext(GlobalContext)
@@ -34,7 +35,9 @@ function Cart() {
           <p>TOTAL</p>
           <h6>{state.totalCost}</h6>
         </div>
-        <Button buttonType="checkout-button" label="CHECKOUT"  />
+        <Link to={"/checkout"}>
+          <Button buttonType="checkout-button" label="CHECKOUT"  />
+        </Link>
       </aside>
     </>
   );

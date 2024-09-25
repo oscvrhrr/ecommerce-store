@@ -9,6 +9,7 @@ import WhiteHeadphones from './pages/WhiteHeadphonesPage'
 import ZX9Speaker from './pages/ZX9SpeakerPage'
 import ZX7Speaker from './pages/ZX7SpeakerPage'
 import EarphoneDetails from './pages/EarphonesDetailsPage'
+import { CheckoutPage } from "./pages/CheckoutPage";
 import { PuffLoader } from "react-spinners";
 import { useState, useEffect } from "react";
 
@@ -59,6 +60,7 @@ function App() {
                <Route path="/product-zx9-speaker" element={<ZX9Speaker/>}></Route>
                <Route path="/product-zx7-speaker" element={<ZX7Speaker/>}></Route>
                <Route path="/product-earphones" element={<EarphoneDetails/>}></Route>
+               <Route path="/checkout" element={<CheckoutPage/>}></Route>
            </Routes>
           
            
